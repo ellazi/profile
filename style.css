@@ -60,6 +60,7 @@ div {
 
 #grad {
   background-image: linear-gradient(to bottom right, #7B5E7B, #B3CDD1, #E9EB87);
+  background-size: cover;
 }
 
 .social-icon {
