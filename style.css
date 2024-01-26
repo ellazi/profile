@@ -1,327 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap');
-
 body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #B3CDD1;
+  text-align: center;
+  color: #7B5E7B;
 }
 
-/* fonts settings */
-p {
-    font-size: 15px;
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2B1D2E;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+.img-circle {
+  border-radius: 50%;
 }
 
-strong {
-    font-weight: 600;
+#profile-pic {
+  width: 200px;
+  height: 200px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  background-color: initial;
+  width: 80%;
+  margin: 0 auto;
+}
+
+div {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px 40px 20px 40px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.full-white {
+  background-color: #FFFFFF;
+}
+
+.yellow {
+  background-color: #E9EB87;
+}
+
+.purple {
+  background-color: #7B5E7B;
+}
+
+.green {
+  background-color: #B9F18C;
+}
+
+.blue {
+  color: #B3CDD1;
+}
+
+#grad {
+  background-image: linear-gradient(to bottom right, #7B5E7B, #B3CDD1, #E9EB87);
+}
+
+.social-icon {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.in-line {
+  display: inline-block;
 }
 
 a {
-    text-decoration: none;
-    color: #646464;
+  color: #7B5E7B;
 }
 
 a:hover {
-    color: #000;
-    font-weight: 600;
-}
-
-/* contantainer in every box for side padding and flex */
-.content {
-    padding: 0 240px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-/* structure for each section */
-.left {
-    width: 30%;
-    transform: rotate(-90deg)  translate(5%, 90%);
-    transform-origin: left bottom;
-}
-
-.left h1 {
-    font-size: 38px;
-    font-weight: 400;
-    line-height: 40px;
-    text-transform: uppercase;
-    width: 500px;
-}
-
-.right {
-    width: 70%;
-}
-
-/* 0- navbar */
-.navbar {
-    width: 100%;
-    height: 60px;
-    background: linear-gradient(247deg, #C6B9CD 35.73%, #D2D1AE 93.66%);
-    display: flex;
-    justify-content: space-between;
-    padding-top: 6px;
-}
-
-.logo img{
-    width: 60px;
-    vertical-align: bottom;
-}
-
-/* 1- banner with foto and quote */
-.banner {
-    width: 100%;
-    height: 500px;
-    background-color: #000;
-    background: url(images/banner_4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-}
-
-.banner-text {
-    padding: 120px 0 80px 240px;
-    font-weight: 100;
-    font-size: 18px;
-}
-
-.banner-text h1 {
-    font-size: 100px;
-    font-weight: 100;
-    margin-bottom: 6px;
-}
-
-/* 2- intro with general info */
-.intro {
-    width: 100%;
-    height: fit-content;
-    background-color: #E4E3BF;
-    padding: 50px 0;
-}
-
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.column-3 {
-    width: 33.3%;
-    text-align: center;
-}
-
-.column-3 h4 {
-    line-height: 18px;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    text-transform: uppercase;
-}
-
-.column-3 img {
-    height: 22px;
-}
-
-/* 3- personality with boxes per trait */
-.personality {
-    background: linear-gradient(211deg, #FBFAD8 18.24%, #DFE6EA 78.29%);
-    width: 100%;
-    height: fit-content;
-    padding: 80px 0 55px 0;
-}
-
-.personality-box {
-    width: calc(100%-20px);
-    height: 200px;
-    padding: 0 40px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.50);
-}
-
-.box-left {
-    width: 40%;
-}
-
-.box-right {
-    width: 60%;
-}
-
-/* 4-7 white box */
-.white {
-    width: 100%;
-    /* height: fit-content; */
-    background-color: #fff;
-    padding: 80px 0 55px 0;
-    height: 450px;
-}
-
-/* 5- tech skills */
-.projects {
-    width: 100%;
-    height: fit-content;
-    background: rgba(190, 206, 212, 0.25);
-    padding: 80px 0 55px 0;
-}
-
-.two {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 20px;
-}
-
-.column-1 {
-    width: 30%;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: left;
-}
-.column-2 {
-    width: 65%;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: left;
-}
-
-.column-1 img {
-    padding-top: 20px;
-    max-width: 200px;
-    align-self: start;
-}
-
-.project-title {
-    display: flex;
-    gap: 10px;
-    align-items: end;
-    margin-bottom: -20px;
-}
-
-/* 6- hobbies */
-.likes {
-    width: 100%;
-    height: fit-content;
-    background: linear-gradient(215deg, #BECED4 20.61%, #C6B9CD 101.94%);
-    padding: 80px 0 55px 0;
-}
-
-.black-box {
-    width: 290px;
-    height: 200px;
-    border-radius: 8px;
-    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.78) 100%);
-    color: #f0f0f0;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.black-box h2 {
-    font-size: 21px;
-    margin-bottom: 10px;
-}
-
-.black-box p {
-    font-size: 13px;
-    line-height: 18px;
-}
-
-/* 7- map */
-.map img{
-    width: 100%;
-}
-
-.languages li {
-    list-style-type: none;
-    margin-bottom: 0;
-    text-align: right;
-}
-
-/* 8- requirements */
-.you-me {
-    width: 100%;
-    height: fit-content;
-    background: linear-gradient(50deg, rgba(250, 247, 175, 0.70) -3.16%, rgba(198, 185, 205, 0.70) 77.58%);
-    padding: 50px 0;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.you-me-box-left {
-    width: 60%;
-    margin-bottom: 20px;
-    align-self: flex-start;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.you-me-box-left img {
-    height: 160px;
-    margin-top: 68px;
-}
-
-.you-me-box-right {
-    width: 60%;
-    align-self: flex-end;
-    text-align: right;
-    list-style-position: inside;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 50px;
-}
-
-.you-me-box-right img {
-    height: 140px;
-    margin-top: 70px;
-}
-
-/* 9- footer */
-.footer {
-    width: 100%;
-    height: 80px;
-    background-color: #D2D1AE;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.links-box {
-    display: flex;
-    gap: 20px;
+  color: #2B1D2E;
 }
 
 @media (max-width: 960px) {
-    /* For a screen < 960px, this CSS will be read */
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
   }
+}
 
-  @media (max-width: 720px) {
-    /* For a screen < 720px, this CSS will be read */
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 600px;
   }
+}
 
-  @media (max-width: 540px) {
-    /* For a screen < 540px, this CSS will be read */
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 450px;
   }
+}
