@@ -198,10 +198,6 @@ a:hover {
     flex-direction: column;
 }
 
-.arrow-history img {
-    width: 100%;
-}
-
 .arrow-history {
     display: flex;
     width: 100%;
@@ -258,10 +254,11 @@ a:hover {
 .content-above-arrow {
     width: 50%;
     margin: 0 auto;
-    visibility: hidden;
+    /* visibility: hidden;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
+    display: none;
 }
 
 .history {
@@ -962,13 +959,16 @@ a:hover {
 
     /* 4- history */
     .history-box {
-        width: 50%;
+        width: 60%;
     }
     .content-above-arrow {
-        visibility: visible;
+        /* visibility: visible;
         position:relative;
         width: 100%;
-        left: 100px;
+        left: 100px; */
+        display: block;
+        width: 80%;
+        left: 20%;
     }
     .content-below-arrow {
         visibility: hidden;
