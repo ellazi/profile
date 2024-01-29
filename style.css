@@ -1046,7 +1046,7 @@ a:hover {
     }
     .you-me-box-left {
         width: 100%;
-        gap: 0;
+        gap: 25px;
         margin-bottom: 20px;
     }
     .you-me-box-left h1{
