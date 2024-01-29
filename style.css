@@ -201,20 +201,68 @@ a:hover {
 .arrow-history img {
     width: 100%;
 }
-/*
-.arrow-history {
-    z-index: 0;
-    position: relative;
-} */
 
-/* .circle-history-purple{
-  z-index: 1;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #C6B9CD;
-} */
+.arrow-history {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    position: relative;
+}
+
+.arrow-orizontal {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    z-index: 0;
+}
+
+.arrow-orizontal::after {
+    content: "";
+    position: absolute;
+    left: calc(100% - 8px); /* Adjust the position of the arrow as needed */
+    top: -3px; /* Adjust the position of the arrow as needed */
+    border: solid black;
+    border-width: 2px 2px 0 0; /* Adjust the size and direction of the arrow */
+    padding: 3px;
+    transform: rotate(45deg); /* Adjust the rotation of the arrow */
+    z-index: 0;
+}
+
+.circle-history-purple,
+.circle-history-dark-blue,
+.circle-history-blue {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle-history-purple {
+    background-color: #C6B9CD;
+    left: 10%;
+}
+
+.circle-history-dark-blue {
+    background-color: #BECED4;
+    left: 40%;
+}
+
+.circle-history-blue {
+    background-color: #78a3ad;
+    left: 80%;
+}
+
+.content-above-arrow {
+    width: 50%;
+    margin: 0 auto;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .history {
     width: 100%;
@@ -644,39 +692,57 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .you-me-box-left {
     width: 60%;
-    margin-bottom: 20px;
     align-self: flex-start;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-}
-
-.you-me-box-left img {
-    height: 160px;
-    margin-top: 68px;
+    align-items: flex-end;
+    gap: 30px;
 }
 
 .you-me-box-right {
     width: 60%;
-    align-self: flex-end;
-    text-align: right;
-    list-style-position: inside;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    align-self: flex-end;
+    text-align: right;
+    list-style-position: inside;
     gap: 30px;
-    margin-bottom: 50px;
 }
 
-.you-me-box-right img {
-    height: 140px;
-    margin-top: 70px;
+.line {
+    min-width: 2px;
+    width: 2px;
+    background-color: #000;
+    position: relative;
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 8px); /* Adjust the position of the arrow as needed */
+    left: -3px;
+    border: solid black;
+    border-width: 0 2px 2px 0; /* Adjust the size and direction of the arrow */
+    padding: 3px;
+    transform: rotate(45deg); /* Adjust the rotation of the arrow */
+}
+
+.you-me-box-text ul {
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 15px;
+}
+
+.you-me-box-text {
+    height: fit-content;
 }
 
 .you-me-text {
@@ -839,11 +905,10 @@ a:hover {
         align-items: flex-start;
         gap: 20px;
     }
-
+    /* 1- banner */
     .banner-text p {
         font-size: 13px;
     }
-
     .left {
         width: 100%;
         transform: rotate(0deg)  translate(0, 0);
@@ -867,9 +932,16 @@ a:hover {
     .banner-text h1 {
         font-size: 60px;
     }
+
+    /* 2- intro */
     .intro {
         padding: 30px 0;
     }
+    .hide-me {
+        display: none;
+    }
+
+    /* 3- personality */
     .personality {
         padding: 30px 0;
     }
@@ -887,22 +959,26 @@ a:hover {
     .box-right {
         width: 100%;
     }
-    .history-section {
-        flex-direction: row;
+
+    /* 4- history */
+    .history-box {
+        width: 50%;
     }
-    .arrow-history img {
+    .content-above-arrow {
+        visibility: visible;
+        position:relative;
+        width: 100%;
+        left: 100px;
+    }
+    .content-below-arrow {
         visibility: hidden;
-    }
-    .arrow-history {
-        width: 15%;
-    }
-    .history {
-        flex-direction: column;
-        gap: 10px;
+        position: absolute;
     }
     .white {
         padding: 30px 0;
     }
+
+    /* 5- tech skills */
     .projects {
         padding: 30px 0;
     }
@@ -931,8 +1007,13 @@ a:hover {
         gap: 10px;
         align-items: end;
     }
+
+    /* 6- hobbies */
     .likes {
         padding: 30px 0;
+    }
+    .reverse {
+        flex-direction: column-reverse;
     }
     .fade-card {
         width: 100%;
@@ -958,6 +1039,8 @@ a:hover {
         width: 100%;
         height: 230px;
     }
+
+    /* 7- you me */
     .you-me {
         padding: 30px 0;
     }
