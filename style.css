@@ -700,7 +700,7 @@ a:hover {
 }
 
 .you-me-box-left {
-    width: 80%;
+    width: 70%;
     align-self: flex-start;
     display: flex;
     flex-direction: row;
@@ -710,7 +710,7 @@ a:hover {
 }
 
 .you-me-box-right {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
