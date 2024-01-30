@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+h2 {
+    line-height: 26px;
+}
+
 strong {
     font-weight: 600;
 }
@@ -80,7 +84,7 @@ a:hover {
 }
 
 .menu-list {
-    width: 150px;
+    width: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,16 +157,17 @@ a:hover {
 
 /* 3- personality with boxes per trait */
 .personality {
-    background: linear-gradient(211deg, #FBFAD8 18.24%, #DFE6EA 78.29%);
+    /* background: linear-gradient(211deg, #FBFAD8 18.24%, #DFE6EA 78.29%); */
+    background: linear-gradient(215deg, #BECED4 20.61%, #C6B9CD 101.94%);
     width: 100%;
     height: fit-content;
-    padding: 80px 0 55px 0;
+    padding: 60px 0 40px 0;
 }
 
 .personality-box {
     width: calc(100%-20px);
-    height: 200px;
-    padding: 0 40px;
+    height: fit-content;
+    padding: 0 30px;
     margin-bottom: 20px;
     background-color: #fff;
     display: flex;
@@ -177,11 +182,11 @@ a:hover {
 }
 
 .box-left {
-    width: 40%;
+    width: 35%;
 }
 
 .box-right {
-    width: 60%;
+    width: 65%;
 }
 
 /* 4-7 white box */
@@ -189,7 +194,7 @@ a:hover {
     width: 100%;
     height: fit-content;
     background-color: #fff;
-    padding: 80px 0 55px 0;
+    padding: 60px 0 40px 0;
 }
 
 /* 4- history */
@@ -348,8 +353,9 @@ a:hover {
 .likes {
     width: 100%;
     height: fit-content;
-    background: linear-gradient(215deg, #BECED4 20.61%, #C6B9CD 101.94%);
-    padding: 80px 0 55px 0;
+    /* background: linear-gradient(215deg, #BECED4 20.61%, #C6B9CD 101.94%); */
+    background: linear-gradient(-20deg, rgba(250, 247, 175, 0.70) -3.16%, rgba(198, 185, 205, 0.70) 77.58%);
+    padding: 50px 0;
 }
 
 .fade-card {
@@ -681,8 +687,9 @@ a:hover {
 .you-me {
     width: 100%;
     height: fit-content;
-    background: linear-gradient(50deg, rgba(250, 247, 175, 0.70) -3.16%, rgba(198, 185, 205, 0.70) 77.58%);
-    padding: 50px 0;
+    background: linear-gradient(211deg, #FBFAD8 18.24%, #DFE6EA 78.29%);
+    /* background: linear-gradient(50deg, rgba(250, 247, 175, 0.70) -3.16%, rgba(198, 185, 205, 0.70) 77.58%); */
+    padding: 40px 0;
 }
 
 .flex-column {
@@ -693,7 +700,7 @@ a:hover {
 }
 
 .you-me-box-left {
-    width: 60%;
+    width: 80%;
     align-self: flex-start;
     display: flex;
     flex-direction: row;
@@ -703,7 +710,7 @@ a:hover {
 }
 
 .you-me-box-right {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -719,6 +726,7 @@ a:hover {
     width: 2px;
     background-color: #000;
     position: relative;
+    height: 220px;
 }
 
 .line::after {
@@ -812,6 +820,12 @@ a:hover {
         width: 290px;
         height: 300px;
     }
+    .box-left {
+        width: 40%;
+    }
+    .box-right {
+        width: 60%;
+    }
 }
 
 @media (max-width: 960px) {
@@ -898,7 +912,7 @@ a:hover {
     }
 
     .menu-list {
-        width:110px;
+        width: 90px;
     }
 
     .container {
