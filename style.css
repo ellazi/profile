@@ -11,6 +11,11 @@ p {
     font-size: 15px;
 }
 
+.p-small {
+    font-size: 13px;
+    margin-top: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
@@ -353,14 +358,13 @@ a:hover {
 .likes {
     width: 100%;
     height: fit-content;
-    /* background: linear-gradient(215deg, #BECED4 20.61%, #C6B9CD 101.94%); */
     background: linear-gradient(-20deg, rgba(250, 247, 175, 0.70) -3.16%, rgba(198, 185, 205, 0.70) 77.58%);
     padding: 50px 0;
 }
 
 .fade-card {
     width: 330px;
-    height: 230px;
+    height: 200px;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
@@ -373,10 +377,10 @@ a:hover {
 
 .fade-front img {
     width: 330px;
-    height: 230px;
+    height: 200px;
     border-radius: 5px;
     object-fit: cover;
-    filter: brightness(95%);
+    filter: brightness(90%);
 }
 
 .fade-back {
@@ -395,77 +399,15 @@ a:hover {
 .fade-front, .fade-back {
     position: absolute;
     width: 330px;
-    height: 230px;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+    height: 200px;
 }
 
 .fade-back .text p {
     font-size: 13px;
 }
 
-/* flip card styling */
-.flip-card {
-    background-color: transparent;
-    width: 330px;
-    height: 230px;
-    border-radius: 5px;
-    /* perspective: 1000px; */
-    cursor: pointer;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
-.flip-card-front img {
-    width: 330px;
-    height: 230px;
-    border-radius: 5px;
-    object-fit: cover;
-    filter: brightness(95%);
-}
-
-/* Style the back side */
-.flip-card-back {
-    background-color: #000;
-    color: white;
-    transform: rotateY(180deg);
-    border-radius: 5px;
-    text-align: left;
-}
-
-.flip-card-back .text {
-    padding: 20px;
-}
-
-.flip-card-back .text p {
-    font-size: 13px;
+.text h3 {
+    margin-top: 0;
 }
 
 /* 7- map and languages */
@@ -786,6 +728,37 @@ a:hover {
     font-size: 12px !important;
 }
 
+/* 10. credentials */
+.credentials {
+    width: 100%;
+    min-height: 260px;
+    height: fit-content;
+    background-color: #F3EFF0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 40px 0;
+}
+
+.certificate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.certificate img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.study-logos img {
+    width: 110px;
+}
+
 @media (max-width: 1000px) {
     .navbar-container, .container {
         width: 85%;
@@ -797,28 +770,28 @@ a:hover {
         width: 75%;
     }
     .fade-card {
-        width: 290px;
-        height: 300px;
+        width: 300px;
+        height: 250px;
     }
 
     .fade-front img {
-        width: 290px;
-        height: 300px;
+        width: 300px;
+        height: 250px;
     }
 
     .fade-front, .fade-back {
-        width: 290px;
-        height: 300px;
+        width: 300px;
+        height: 250px;
     }
 
     .flip-card {
-        width: 290px;
-        height: 300px;
+        width: 300px;
+        height: 250px;
     }
 
     .flip-card-front img {
-        width: 290px;
-        height: 300px;
+        width: 300px;
+        height: 250px;
     }
     .box-left {
         width: 40%;
@@ -851,54 +824,57 @@ a:hover {
 @media (max-width: 880px) {
     .fade-card {
         width: 270px;
-        height: 330px;
+        height: 220px;
     }
 
     .fade-front img {
         width: 270px;
-        height: 330px;
+        height: 220px;
     }
 
     .fade-front, .fade-back {
         width: 270px;
-        height: 330px;
+        height: 220px;
     }
 
     .flip-card {
         width: 270px;
-        height: 330px;
+        height: 220px;
     }
 
     .flip-card-front img {
         width: 270px;
-        height: 330px;
+        height: 220px;
+    }
+    .text h3 {
+        margin-top: 2px;
     }
 }
 
 @media (max-width: 790px) {
     .fade-card {
         width: 240px;
-        height: 330px;
+        height: 240px;
     }
 
     .fade-front img {
         width: 240px;
-        height: 330px;
+        height: 240px;
     }
 
     .fade-front, .fade-back {
         width: 240px;
-        height: 330px;
+        height: 240px;
     }
 
     .flip-card {
         width: 240px;
-        height: 330px;
+        height: 240px;
     }
 
     .flip-card-front img {
         width: 240px;
-        height: 330px;
+        height: 240px;
     }
 }
 
@@ -1035,27 +1011,27 @@ a:hover {
     }
     .fade-card {
         width: 100%;
-        height: 230px;
+        height: 170px;
     }
 
     .fade-front img {
         width: 100%;
-        height: 230px;
+        height: 170px;
     }
 
     .fade-front, .fade-back {
         width: 100%;
-        height: 230px;
+        height: 170px;
     }
 
     .flip-card {
         width: 100%;
-        height: 230px;
+        height: 170px;
     }
 
     .flip-card-front img {
         width: 100%;
-        height: 230px;
+        height: 170px;
     }
 
     /* 7- you me */
