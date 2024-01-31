@@ -298,7 +298,7 @@ a:hover {
 .two {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
     gap: 20px;
     height: fit-content;
@@ -364,8 +364,8 @@ a:hover {
 }
 
 .fade-card {
-    width: 330px;
-    height: 200px;
+    width: 100%;
+    height: 210px;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
@@ -377,8 +377,8 @@ a:hover {
 }
 
 .fade-front img {
-    width: 330px;
-    height: 200px;
+    width: 100%;
+    height: 210px;
     border-radius: 5px;
     object-fit: cover;
     filter: brightness(90%);
@@ -399,10 +399,8 @@ a:hover {
 
 .fade-front, .fade-back {
     position: absolute;
-    width: 330px;
-    height: 200px;
-    /* -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; */
+    width: 100%;
+    height: 210px;
 }
 
 .fade-back .text p {
@@ -740,12 +738,12 @@ a:hover {
 .line::after {
     content: "";
     position: absolute;
-    top: calc(100% - 8px); /* Adjust the position of the arrow as needed */
+    top: calc(100% - 8px);
     left: -3px;
     border: solid black;
-    border-width: 0 2px 2px 0; /* Adjust the size and direction of the arrow */
+    border-width: 0 2px 2px 0;
     padding: 3px;
-    transform: rotate(45deg); /* Adjust the rotation of the arrow */
+    transform: rotate(45deg);
 }
 
 .you-me-box-text ul {
@@ -836,29 +834,20 @@ a:hover {
         width: 75%;
     }
     .fade-card {
-        width: 300px;
-        height: 250px;
+        width: 100%;
+        height: 240px;
     }
 
     .fade-front img {
-        width: 300px;
-        height: 250px;
+        width: 100%;
+        height: 240px;
     }
 
     .fade-front, .fade-back {
-        width: 300px;
-        height: 250px;
+        width: 100%;
+        height: 240px;
     }
 
-    .flip-card {
-        width: 300px;
-        height: 250px;
-    }
-
-    .flip-card-front img {
-        width: 300px;
-        height: 250px;
-    }
     .box-left {
         width: 40%;
     }
@@ -884,63 +873,6 @@ a:hover {
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
-    }
-}
-
-@media (max-width: 880px) {
-    .fade-card {
-        width: 270px;
-        height: 220px;
-    }
-
-    .fade-front img {
-        width: 270px;
-        height: 220px;
-    }
-
-    .fade-front, .fade-back {
-        width: 270px;
-        height: 220px;
-    }
-
-    .flip-card {
-        width: 270px;
-        height: 220px;
-    }
-
-    .flip-card-front img {
-        width: 270px;
-        height: 220px;
-    }
-    .text h3 {
-        margin-top: 2px;
-    }
-}
-
-@media (max-width: 790px) {
-    .fade-card {
-        width: 240px;
-        height: 240px;
-    }
-
-    .fade-front img {
-        width: 240px;
-        height: 240px;
-    }
-
-    .fade-front, .fade-back {
-        width: 240px;
-        height: 240px;
-    }
-
-    .flip-card {
-        width: 240px;
-        height: 240px;
-    }
-
-    .flip-card-front img {
-        width: 240px;
-        height: 240px;
     }
 }
 
@@ -1077,27 +1009,27 @@ a:hover {
     }
     .fade-card {
         width: 100%;
-        height: 170px;
+        height: 180px;
     }
 
     .fade-front img {
         width: 100%;
-        height: 170px;
+        height: 180px;
     }
 
     .fade-front, .fade-back {
         width: 100%;
-        height: 170px;
+        height: 180px;
     }
 
     .flip-card {
         width: 100%;
-        height: 170px;
+        height: 180px;
     }
 
     .flip-card-front img {
         width: 100%;
-        height: 170px;
+        height: 180px;
     }
 
     /* 7- you me */
@@ -1125,8 +1057,4 @@ a:hover {
     .you-me-text h3 {
         font-size: 16px;
     }
-}
-
-@media (max-width: 540px) {
-
 }
