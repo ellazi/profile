@@ -162,8 +162,8 @@ a:hover {
 
 /* 3- personality with boxes per trait */
 .personality {
-    /* background: linear-gradient(211deg, #FBFAD8 18.24%, #DFE6EA 78.29%); */
     background: linear-gradient(215deg, #BECED4 20.61%, #C6B9CD 101.94%);
+    background-attachment: fixed;
     width: 100%;
     height: fit-content;
     padding: 60px 0 40px 0;
@@ -227,12 +227,12 @@ a:hover {
 .arrow-orizontal::after {
     content: "";
     position: absolute;
-    left: calc(100% - 8px); /* Adjust the position of the arrow as needed */
-    top: -3px; /* Adjust the position of the arrow as needed */
+    left: calc(100% - 8px);
+    top: -3px;
     border: solid black;
-    border-width: 2px 2px 0 0; /* Adjust the size and direction of the arrow */
+    border-width: 2px 2px 0 0;
     padding: 3px;
-    transform: rotate(45deg); /* Adjust the rotation of the arrow */
+    transform: rotate(45deg);
     z-index: 0;
 }
 
@@ -264,10 +264,6 @@ a:hover {
 .content-above-arrow {
     width: 50%;
     margin: 0 auto;
-    /* visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0; */
     display: none;
 }
 
@@ -358,8 +354,8 @@ a:hover {
 .likes {
     width: 100%;
     height: fit-content;
-    /* background: linear-gradient(215deg, #BECED4 20.61%, #C6B9CD 101.94%); */
     background: linear-gradient(-20deg, rgba(250, 247, 175, 0.70) -3.16%, rgba(198, 185, 205, 0.70) 77.58%);
+    background-attachment: fixed;
     padding: 50px 0;
 }
 
@@ -694,7 +690,7 @@ a:hover {
     width: 100%;
     height: fit-content;
     background: linear-gradient(211deg, #FBFAD8 18.24%, #DFE6EA 78.29%);
-    /* background: linear-gradient(50deg, rgba(250, 247, 175, 0.70) -3.16%, rgba(198, 185, 205, 0.70) 77.58%); */
+    /* background-attachment: fixed; */
     padding: 40px 0;
 }
 
