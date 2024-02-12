@@ -69,7 +69,8 @@ a:hover {
 .navbar {
     width: 100%;
     height: 60px;
-    background: linear-gradient(247deg, #C6B9CD 35.73%, #D2D1AE 93.66%);
+    /* background: linear-gradient(247deg, #C6B9CD 35.73%, #D2D1AE 93.66%); */
+    background-color: #C6B9CD;
     display: flex;
     justify-content: space-between;
     padding-top: 6px;
@@ -133,7 +134,8 @@ a:hover {
 .intro {
     width: 100%;
     height: fit-content;
-    background-color: #E4E3BF;
+    /* background-color: #E4E3BF; */
+    background: linear-gradient(190deg, #DAD2CD, #F5F3CD);
     padding: 50px 0;
 }
 
@@ -689,7 +691,7 @@ a:hover {
 .you-me {
     width: 100%;
     height: fit-content;
-    background: linear-gradient(211deg, #FBFAD8 18.24%, #DFE6EA 78.29%);
+    background: linear-gradient(195deg, #FBFAD8 18.24%, #DFE6EA 78.29%);
     /* background-attachment: fixed; */
     padding: 40px 0;
 }
