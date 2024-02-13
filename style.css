@@ -795,7 +795,9 @@ a:hover {
     width: 100%;
     min-height: 260px;
     height: fit-content;
-    background-color: #F3EFF0;
+    /* background-color: #F3EFF0; */
+    background: linear-gradient(-10deg, rgba(250, 247, 175, 0.70) -3.16%, rgba(198, 185, 205, 0.70) 77.58%);
+    background-attachment: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
