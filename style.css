@@ -778,11 +778,11 @@ a:hover {
 }
 
 .links-box a {
-    color: #000;
+  color: #d6d5ac;
 }
 
 .links-box a:hover {
-    color: #fff;
+  color: #000;
 }
 
 .footer p {
