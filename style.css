@@ -750,6 +750,22 @@ a:hover {
     padding-left: 15px;
 }
 
+.you-me-box-text li {
+  display: flex;
+  gap: 15px;
+  align-items: baseline;
+  list-style-type: none;
+}
+
+.you-me-box-text li p {
+  margin-bottom: 0;
+}
+
+.you-me-box-text i {
+  width: 18px;
+  text-align: center;
+}
+
 .you-me-box-text {
     height: fit-content;
 }
