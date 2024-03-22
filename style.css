@@ -352,6 +352,10 @@ a:hover {
     margin: 0;
 }
 
+.video-container {
+  margin-top: 20px;
+}
+
 /* 6- hobbies */
 .likes {
     width: 100%;
