@@ -487,6 +487,7 @@ a:hover {
 
 .map-container {
     position: relative;
+    display: flex;
 }
 
 .circle {
@@ -641,6 +642,38 @@ a:hover {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     z-index: 2;
+}
+
+.london {
+  position: absolute;
+  top: 17%;
+  left: 43%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.london:hover .london-box {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.london-box {
+  position: absolute;
+  top: -5px;
+  left: 25px;
+  width: 150px;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #f3ecf7fb;
+  color: #000;
+  font-size: 13px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .language-list {
