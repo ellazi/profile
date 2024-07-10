@@ -1,15 +1,25 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
 /* font styles */
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  background-color: #1E1E1E;
+  background-color: #101010;
   color: #F5EFEB;
+  font-size: 16px;
   margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lora", serif;
-  color: #F5EFEB;
+  font-weight: 400 !important;
+}
+
+h1 {
+  font-size: 40px !important;
 }
 
 a {
@@ -17,16 +27,37 @@ a {
   color: #F5EFEB;
 }
 
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
 
 /* container */
 .container {
   margin: 0 auto;
+  width: 80%;
 }
 
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.t5 {
+  margin-top: 5em;
+}
+
+.t4 {
+  margin-top: 4em;
+}
+
+.t2 {
+  margin-top: 2em;
 }
 
 /* header */
@@ -36,20 +67,22 @@ header {
   width: 100%;
   top: 0;
   margin: 0 auto;
-  /* background-color: #1E1E1E; */
-  color: #F5EFEB;
+  background-color: #101010;
+  /* color: #F5EFEB; */
   padding: 10px 0;
   transition: background-color 0.3s ease;
   z-index: 1000;
 }
 
 nav {
+  height: 50px;
   width: 90%;
   margin: 0 auto;
 }
 
 #logo img {
   width: 55px;
+  margin-top: 8px;
 }
 
 nav ul {
@@ -62,21 +95,35 @@ nav ul {
   align-items: center;
 }
 
+/* skills */
+.outer-div {
+  height: 42vh;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.inner-div {
+  margin-bottom: 2em;
+  padding: 1em 0;
+  width: 100%;
+  height: fit-content;
+  border-top: #F5EFEB 1px solid;
+  border-bottom: #F5EFEB 1px solid;
+  scroll-snap-align: start;
+}
+
 /* responsive */
 @media (max-width: 960px) {
   .container {
-    width: 700px;
+    width: 90%;
   }
 }
 
 @media (max-width: 720px) {
-  .container {
-    width: 600px;
-  }
+
 }
 
 @media (max-width: 540px) {
-  .container {
-    width: 450px;
-  }
+
 }
