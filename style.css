@@ -52,8 +52,8 @@ a {
 
 .flex-col {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .flex-row {
@@ -122,12 +122,12 @@ section {
   padding: 3em 0 3em 0;
 }
 
-#skills, #development, #managing {
+#skills, #development {
   background-color: #101010;
   color: #F5EFEB;
 }
 
-#teaching {
+#teaching, #managing, #languages {
   background-color: #F5EFEB;
   color: #101010;
 }
@@ -156,7 +156,7 @@ nav {
 }
 
 nav ul {
-  width: 150px;
+  width: 180px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -168,7 +168,7 @@ nav ul {
 /* footer */
 footer {
   position: fixed;
-  bottom: 45px;
+  bottom: 0;
   height: 50px;
   width: 100%;
   z-index: 1000;
@@ -188,16 +188,35 @@ footer ul {
   width: 90px;
 }
 
+/* intro */
+#intro {
+  height: 100%;
+  padding: 0 !important;
+}
+
+#intro video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* skills */
 .outer-div {
-  height: 42vh;
+  height: 45vh;
   width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  margin: 2em 0;
+  margin: 4em 0;
+  background: #360033;
+  background: -webkit-linear-gradient(60deg, #ccccb251, #75751969);
+  background: linear-gradient(50deg, #c4b172b2, #d1db407f, #75751969);
+  padding: 0;
 }
 
 .outher-div::-webkit-scrollbar {
@@ -206,12 +225,11 @@ footer ul {
 
 .inner-div {
   margin-bottom: 2em;
-  padding: 1em 0;
-  width: 100%;
+  padding: 1em;
+  /* width: 100%; */
   height: fit-content;
-  border-top: #F5EFEB 1px solid;
-  border-bottom: #F5EFEB 1px solid;
   scroll-snap-align: start;
+  border-bottom: #101010 3px solid;
 }
 
 /* teaching */
@@ -228,6 +246,19 @@ footer ul {
   padding: 1em 0;
 }
 
+
+/* web */
+.video-container {
+  margin: 3em 0 1em 0;
+}
+
+.project {
+  margin: 3em 0;
+}
+
+/* .project:last-child {
+  margin-bottom: 5em;
+} */
 
 /* responsive */
 @media (max-width: 960px) {
