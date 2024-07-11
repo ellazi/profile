@@ -1,6 +1,7 @@
 body, html {
-  height: 100%;
   margin: 0;
+  padding: 0;
+  height: 100%;
   scroll-behavior: smooth;
 }
 
@@ -25,6 +26,7 @@ h1 {
 a {
   text-decoration: none;
   color: #F5EFEB;
+  font-size: 20px;
 }
 
 .center {
@@ -48,36 +50,104 @@ a {
   align-items: center;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-row {
+  gap: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.light-vertical-line {
+  top:0;
+  bottom: 0;
+  align-self: stretch;
+  background-color: #F5EFEB;
+  width: 1px;
+  z-index: 1;
+}
+
+.dark-vertical-line {
+  top: 0;
+  bottom: 0;
+  align-self: stretch;
+  background-color: #101010;
+  width: 1px;
+  z-index: 1;
+}
+
+/* .flex-row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 0.5px);
+  width: 1px;
+  background-color: #101010;
+} */
+
+.flex-50 {
+  width: 50%;
+  align-self: flex-start;
+}
+
+.flex-50 img {
+  width: 100%;
+}
+
+.flex-col-50:last-child {
+  border-right: none;
+}
+
 .t5 {
   margin-top: 5em;
 }
 
-.t4 {
-  margin-top: 4em;
+.t3 {
+  margin-top: 3em;
 }
 
 .t2 {
   margin-top: 2em;
 }
 
+/* sections */
+section {
+  padding: 3em 0 3em 0;
+}
+
+#skills, #development, #managing {
+  background-color: #101010;
+  color: #F5EFEB;
+}
+
+#teaching {
+  background-color: #F5EFEB;
+  color: #101010;
+}
+
 /* header */
 header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   margin: 0 auto;
-  background-color: #101010;
-  /* color: #F5EFEB; */
   padding: 10px 0;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: 40px;
   z-index: 1000;
 }
 
 nav {
-  height: 50px;
   width: 90%;
   margin: 0 auto;
+  padding: 0.5em 0;
 }
 
 #logo img {
@@ -95,12 +165,43 @@ nav ul {
   align-items: center;
 }
 
+/* footer */
+footer {
+  position: fixed;
+  bottom: 45px;
+  height: 50px;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+}
+
 /* skills */
 .outer-div {
   height: 42vh;
   width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 2em 0;
+}
+
+.outher-div::-webkit-scrollbar {
+  display: none;
 }
 
 .inner-div {
@@ -112,6 +213,21 @@ nav ul {
   border-bottom: #F5EFEB 1px solid;
   scroll-snap-align: start;
 }
+
+/* teaching */
+.review-name {
+  font-weight: bold;
+}
+
+.review-name p {
+  margin: 0;
+  padding: 0;
+}
+
+.review {
+  padding: 1em 0;
+}
+
 
 /* responsive */
 @media (max-width: 960px) {
