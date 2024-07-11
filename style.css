@@ -95,10 +95,18 @@ a {
 .flex-50 {
   width: 50%;
   align-self: flex-start;
+  margin-bottom: 1em;
+}
+
+.flex-50 h3 {
+  margin-top: 0;
 }
 
 .flex-50 img {
-  width: 100%;
+  padding: 0.5em 0 1.5em 0;
+  max-width: 100%;
+  max-height: 32px;
+  object-fit: contain;
 }
 
 .flex-col-50:last-child {
@@ -256,9 +264,12 @@ footer ul {
   margin: 3em 0;
 }
 
-/* .project:last-child {
-  margin-bottom: 5em;
-} */
+/* languages */
+#languages img {
+  width: 100%;
+  object-fit: contain;
+  margin: 2em 0;
+}
 
 /* responsive */
 @media (max-width: 960px) {

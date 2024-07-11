@@ -29,7 +29,7 @@
 
     <!-- <div id="content"> -->
       <section id="intro">
-        <video src="videos/Life_is.mp4"></video>
+        <video src="videos/life_is.mp4"></video>
       </section>
       <section id="skills">
         <div class="container">
@@ -165,6 +165,7 @@
               <div class="flex-50">
                 <p>Language school offering foreign language courses
                   to companies</p>
+                <img src="images/teach-tech.png" alt="microsoft office, google suite, zoom">
               </div>
               <div class="dark-vertical-line"></div>
               <div class="flex-50">
@@ -292,7 +293,7 @@
             <div class="flex-row">
               <div class="flex-50">
                 <p>Full stack web development bootcamp</p>
-                <img src="images/web-tech.png" alt="">
+                <img src="images/web-tech.png" alt="ruby, rails, js, figma, db">
               </div>
               <div class="light-vertical-line"></div>
               <div class="flex-50">
@@ -351,6 +352,15 @@
                 <p>Le Wagon, <br>
                   Barcelona <br>
                   Q1 2024</p>
+              </div>
+            </div>
+            <div class="flex-row">
+              <div class="flex-50" style="align-self: center;">
+                <img src="images/web-tech-black.png" alt="ruby, rails, js, figma, db">
+              </div>
+              <div class="dark-vertical-line"></div>
+              <div class="flex-50" style="align-self: center;">
+                  <img src="images/batch-tech2.png" alt="notion, slack, canva" style="height: 20px;">
               </div>
             </div>
 
@@ -455,7 +465,53 @@
         </div>
       </section>
       <section id="languages">
-
+        <div class="container">
+          <h1 style="margin-bottom:0;">"To have a second language is to have a second soul."</h1>
+          <p>Charlemagne</p>
+          <p class="t3">Lorem ipsum dolor sit amet consectetur. Lacus at dignissim pretium lectus urna libero. Neque id lacus vitae odio volutpat euismod. Quam nibh mauris quam convallis. Id maecenas mus a dolor senectus orci potenti vitae.</p>
+          <!-- <img src="images/map.png" alt="world map"> -->
+        </div>
+        <img src="images/map.png" alt="world map">
+        <div class="container" style="margin-bottom: 3em;">
+          <div class="flex-col">
+            <div class="flex-row">
+              <div class="flex-50">
+                <h3>English</h3>
+              </div>
+              <div class="dark-vertical-line"></div>
+              <div class="flex-50">
+                TEFL 120h, 9 years of teaching experience
+              </div>
+            </div>
+            <div class="flex-row">
+              <div class="flex-50">
+                <h3>Italian</h3>
+              </div>
+              <div class="dark-vertical-line"></div>
+              <div class="flex-50">
+                Dils PG II, 3 years of teaching experience
+              </div>
+            </div>
+            <div class="flex-row">
+              <div class="flex-50">
+                <h3>Mandarin Chinese</h3>
+              </div>
+              <div class="dark-vertical-line"></div>
+              <div class="flex-50">
+                HSK4, Confucius Institute
+              </div>
+            </div>
+            <div class="flex-row">
+              <div class="flex-50">
+                <h3>Spanish</h3>
+              </div>
+              <div class="dark-vertical-line"></div>
+              <div class="flex-50">
+                Lived and worked in Barcelona, Spain
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     <!-- </div> -->
 
@@ -515,6 +571,14 @@
                   footer.style.backgroundColor = '#101010';
                   break;
               case 'managing':
+                  navbar.style.backgroundColor = '#F5EFEB';
+                  navbar.style.color = '#101010';
+                  links.forEach(link => {
+                      link.style.color = '#101010';
+                  });
+                  footer.style.backgroundColor = '#F5EFEB';
+                  break;
+              case 'languages':
                   navbar.style.backgroundColor = '#F5EFEB';
                   navbar.style.color = '#101010';
                   links.forEach(link => {
