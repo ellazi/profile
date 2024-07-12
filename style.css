@@ -303,10 +303,9 @@ footer ul {
   padding: 0;
 }
 
-/* .review {
-  padding: 0.5em 0;
-} */
-
+.review {
+  padding: 1em 0;
+}
 
 /* web */
 .outer-div-projects {
