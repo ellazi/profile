@@ -188,11 +188,6 @@ nav {
   padding: 0.5em 0;
 }
 
-/* #logo img {
-  width: 55px;
-  margin-top: 8px;
-} */
-
 nav ul {
   width: 180px;
   list-style-type: none;
@@ -241,6 +236,14 @@ footer ul {
   left: 0;
 }
 
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 /* skills */
 .outer-div {
   height: 50vh;
@@ -251,11 +254,11 @@ footer ul {
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin: 4em 0;
-  background: #360033;
-  background: -webkit-linear-gradient(60deg, #ccccb251, #75751969);
-  background: linear-gradient(50deg, #c4b172b2, #d1db407f, #75751969);
+  /* background: #7c746e;
+  background: -webkit-linear-gradient(60deg, #ffe7d5b2, #d7c7c77d, #54636536);
+  background: linear-gradient(50deg, #ffe7d5b2, #d7c7c77d, #54636536); */
   padding: 0;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .outher-div::-webkit-scrollbar {
@@ -267,7 +270,8 @@ footer ul {
   padding: 1em;
   height: fit-content;
   scroll-snap-align: start;
-  border-bottom: #101010 3px solid;
+  border-bottom: #F5EFEB 1px solid;
+  border-top: #F5EFEB 1px solid;
 }
 
 .inner-div h3 {
@@ -299,9 +303,9 @@ footer ul {
   padding: 0;
 }
 
-.review {
-  padding: 1em 0;
-}
+/* .review {
+  padding: 0.5em 0;
+} */
 
 
 /* web */
