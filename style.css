@@ -422,15 +422,6 @@ footer ul {
   .outer-div-projects {
     max-height: fit-content;
   }
-
-  .flex-grid-inner {
-    max-width: 100%;
-    max-height: 300px;
-  }
-
-  .flex-item {
-    flex: 1 1 100%;
-  }
 }
 
 
