@@ -175,6 +175,7 @@ a:hover {
   gap: 1.5em;
   justify-content: space-between;
   margin: 2em 0;
+  overflow: hidden;
 }
 
 .flex-grid-inner {
@@ -186,7 +187,7 @@ a:hover {
   width: 100%;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  overflow: auto;
+  /* overflow: auto; */
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
