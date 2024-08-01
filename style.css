@@ -339,6 +339,13 @@ footer ul {
   margin: 5px;
 }
 
+.point-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 /* teaching */
 .outer-div-reviews {
   max-height: 350px;
@@ -366,7 +373,7 @@ footer ul {
 
 /* web */
 .outer-div-projects {
-  max-height: 430px;
+  max-height: 450px;
   width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -421,6 +428,10 @@ footer ul {
 
   .outer-div-projects {
     max-height: fit-content;
+  }
+
+  .point-down {
+    display: none;
   }
 }
 
