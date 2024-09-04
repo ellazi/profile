@@ -258,6 +258,22 @@ nav ul {
   object-fit: contain;
 }
 
+.dark-text-border {
+  text-shadow:
+        -1px -1px 0 #101010,
+        1px -1px 0 #101010,
+        -1px 1px 0 #101010,
+        1px 1px 0 #101010;
+}
+
+.light-text-border {
+  text-shadow:
+        -1px -1px 0 #F5EFEB,
+        1px -1px 0 #F5EFEB,
+        -1px 1px 0 #F5EFEB,
+        1px 1px 0 #F5EFEB;
+}
+
 /* footer */
 footer {
   position: fixed;

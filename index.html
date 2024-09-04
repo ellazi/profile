@@ -18,12 +18,12 @@
           <a id="logo" href="#intro"><img src="images/logo.png" alt="my face"></a>
         </div>
         <ul>
-          <li><a href="#skills"><i class="fa-solid fa-fingerprint"></i></a></li>
-          <li><a href="#managing"><i class="fa-solid fa-people-roof"></i></a></li>
-          <li><a href="#development"><i class="fa-solid fa-laptop-code"></i></a></li>
-          <li><a href="#teaching"><i class="fa-solid fa-person-chalkboard"></i></a></li>
-          <li><a href="#learning"><i class="fa-solid fa-lines-leaning"></i></a></li>
-          <li><a href="#languages"><i class="fa-solid fa-earth-europe"></i></a></li>
+          <li><a href="#skills" id="skills-btn"><i class="fa-solid fa-fingerprint"></i></a></li>
+          <li><a href="#managing" id="managing-btn"><i class="fa-solid fa-people-roof"></i></a></li>
+          <li><a href="#development" id="dev-btn"><i class="fa-solid fa-laptop-code"></i></a></li>
+          <li><a href="#teaching" id="teaching-btn"><i class="fa-solid fa-person-chalkboard"></i></a></li>
+          <li><a href="#learning" id="learning-btn"><i class="fa-solid fa-lines-leaning"></i></a></li>
+          <li><a href="#languages" id="languages-btn"><i class="fa-solid fa-earth-europe"></i></a></li>
         </ul>
       </nav>
     </header>
@@ -708,6 +708,12 @@
           const sections = document.querySelectorAll('section');
           const links = document.querySelectorAll('a');
           const footer = document.getElementById('footer');
+          const skillsBtn = document.getElementById('skills-btn');
+          const managingBtn = document.getElementById('managing-btn');
+          const devBtn = document.getElementById('dev-btn');
+          const teachingBtn = document.getElementById('teaching-btn');
+          const learningBtn = document.getElementById('learning-btn');
+          const languagesBtn = document.getElementById('languages-btn');
 
           let currentSection = '';
 
@@ -724,6 +730,7 @@
               case 'intro':
                   navbar.style.backgroundColor = '';
                   footer.style.backgroundColor = '';
+                  skillsBtn.style.color = ''
                   break;
               case 'skills':
                   navbar.style.backgroundColor = '#101010';
@@ -732,6 +739,7 @@
                       link.style.color = '#F5EFEB';
                   });
                   footer.style.backgroundColor = '#101010';
+                  skillsBtn.style.color = '#B4ADA9'
                   break;
               case 'teaching':
                   navbar.style.backgroundColor = '#F5EFEB';
@@ -740,6 +748,7 @@
                       link.style.color = '#101010';
                   });
                   footer.style.backgroundColor = '#F5EFEB';
+                  teachingBtn.style.color = '#B4ADA9'
                   break;
               case 'development':
                   navbar.style.backgroundColor = '#101010';
@@ -748,6 +757,7 @@
                       link.style.color = '#F5EFEB';
                   });
                   footer.style.backgroundColor = '#101010';
+                  devBtn.style.color = '#B4ADA9'
                   break;
               case 'learning':
                   navbar.style.backgroundColor = '#101010';
@@ -756,6 +766,7 @@
                       link.style.color = '#F5EFEB';
                   });
                   footer.style.backgroundColor = '#101010';
+                  learningBtn.style.color = '#B4ADA9'
                   break;
               case 'managing':
                   navbar.style.backgroundColor = '#F5EFEB';
@@ -764,6 +775,7 @@
                       link.style.color = '#101010';
                   });
                   footer.style.backgroundColor = '#F5EFEB';
+                  managingBtn.style.color = '#B4ADA9'
                   break;
               case 'languages':
                   navbar.style.backgroundColor = '#F5EFEB';
@@ -772,6 +784,7 @@
                       link.style.color = '#101010';
                   });
                   footer.style.backgroundColor = '#F5EFEB';
+                  languagesBtn.style.color = '#B4ADA9'
                   break;
               default:
                   navbar.style.backgroundColor = '#101010';
