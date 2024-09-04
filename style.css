@@ -312,6 +312,13 @@ footer ul {
   display: block;
 }
 
+.inner-div img {
+  max-width: 180px;
+  max-height: 180px;
+  object-fit: contain;
+  transform: scaleX(-1);
+}
+
 /* skills */
 .outer-div {
   height: 50vh;
