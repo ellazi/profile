@@ -277,7 +277,7 @@
           </div>
           <div class="flex-right outer-div-projects">
             <div class="project">
-              <a href="https://www.regal-art.com/" target="_blank">
+              <a href="https://github.com/finnstraehle/regal_art" target="_blank">
                 <h3>Regal Art</h3>
                 <p>Collaboratively developed using Ruby on Rails during an intensive two weeks project as part of the full stack development bootcamp.</p>
               </a>
@@ -306,12 +306,17 @@
           </video>
         </div>
         <div class="flex-right-ui">
+          <div class="carousel-nav-btns">
+            <button class="nav-btn" data-slide-id="regal">Regal Art</button>
+            <button class="nav-btn" data-slide-id="artigiani">Artigiani</button>
+            <button class="nav-btn" data-slide-id="havens">Havens</button>
+          </div>
           <div class="carousel">
             <div class="slides">
-              <div class="slide">
-                <video src="./videos/regalhome-xsm.mp4" autoplay muted loop></video>
+              <div class="slide" id="regal">
+                <video src="./videos/regal-xsm-merge.mp4" autoplay muted loop></video>
               </div>
-              <div class="slide">
+              <!-- <div class="slide">
                 <img src="./images/regal2.png" alt="regalart signup">
               </div>
               <div class="slide">
@@ -322,11 +327,11 @@
               </div>
               <div class="slide">
                 <img src="./images/regalart404.png" alt="regalart 404">
-              </div>
-              <div class="slide">
+              </div> -->
+              <div class="slide" id="artigiani">
                 <video src="./videos/artigiani-xsm.mp4" autoplay muted loop></video>
               </div>
-              <div class="slide">
+              <div class="slide" id="havens">
                 <video src="./videos/havens-xsm.mp4" autoplay muted loop></video>
               </div>
             </div>
@@ -719,6 +724,22 @@
       const slides = carousel.querySelector(".slides");
       const slidesInSlides = slides.querySelectorAll(".slide");
       const nOfSlides = slidesInSlides.length;
+      const navButtons = document.querySelectorAll('.nav-btn');
+      const slideWidth = 100 / nOfSlides;
+
+      navButtons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+          event.preventDefault();
+          const slideId = event.currentTarget.getAttribute('data-slide-id');
+          const targetSlide = document.getElementById(slideId);
+          goToSlideById(targetSlide);
+        });
+      });
+
+      const goToSlideById = (targetSlide) => {
+        const slideIndex = Array.from(slidesInSlides).indexOf(targetSlide);
+        slides.style.transform = `translateX(${-slideWidth*slideIndex}%)`;
+      };
 
       let currentIndex = 0;
 
@@ -729,7 +750,6 @@
       });
 
       const updateSlides = () => {
-        const slideWidth = 100 / nOfSlides;
         const translateXValue = -currentIndex * slideWidth;
         slides.style.transform = `translateX(${translateXValue}%)`;
       };
