@@ -488,7 +488,7 @@ footer ul {
 
 .carousel-btns {
   position: relative;
-  bottom: 50px;
+  bottom: 150px;
   width: 95%;
   display: flex;
   justify-content: space-between;
@@ -532,7 +532,12 @@ footer ul {
 }
 
 .nav-btn:hover {
-  color:#F5EFEB;
+  /* color:#F5EFEB; */
+  border: 1px solid #F4FF77;
+}
+
+.nav-btn:active {
+  /* color: #F4FF77; */
   border: 1px solid #F4FF77;
 }
 
