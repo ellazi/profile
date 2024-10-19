@@ -441,7 +441,7 @@ footer ul {
 .flex-container-ui {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width:100%;
   gap: 3em;
   padding: 3em 0;
@@ -524,7 +524,7 @@ footer ul {
 .nav-btn {
   color: #F5EFEB;
   background-color: #101010;
-  border: 1px solid #000;
+  border: 1px solid #f5efeb2d;
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
