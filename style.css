@@ -384,6 +384,37 @@ footer ul {
   width: 100%;
 }
 
+.arrow-down {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+  margin: 0;
+  gap: 2em;
+  width: 70%;
+  margin: 0 auto;
+  height: 150px;
+}
+
+.arrow-down img {
+  max-height: 70px;
+  object-fit: contain;
+}
+
+.scroll-cue {
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  animation: opacitySwitch 3s ease-in-out infinite;
+}
+
+@keyframes opacitySwitch {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
 /* teaching */
 .outer-div-reviews {
   max-height: 350px;
