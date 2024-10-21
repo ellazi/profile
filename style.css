@@ -642,18 +642,18 @@ footer ul {
   .flex-left-ui {
     width: 100%;
   }
-  
+
   .carousel {
     transform: rotate(270deg);
     transform-origin: top left;
-    top: 82vh;
-    width: 82vh;
+    top: 78vh;
+    width: 78vh;
     height: 100%;
   }
 
   .flex-right-ui {
     overflow: hidden;
-    height: 84vh;
+    height: 85vh;
     width: 100%;
     margin: auto;
   }
