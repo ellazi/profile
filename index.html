@@ -20,12 +20,12 @@
         </div>
         <div id="mobile-navbar">
           <ul>
-            <li><a href="#skills" id="skills-btn"><i class="fa-solid fa-fingerprint"></i></a></li>
-            <li><a href="#managing" id="managing-btn"><i class="fa-solid fa-people-roof"></i></a></li>
-            <li><a href="#development" id="dev-btn"><i class="fa-solid fa-code"></i></a></li>
-            <li><a href="#teaching" id="teaching-btn"><i class="fa-solid fa-chalkboard-user"></i></a></li>
-            <li><a href="#learning" id="learning-btn"><i class="fa-solid fa-lines-leaning"></i></a></li>
-            <li><a href="#languages" id="languages-btn"><i class="fa-solid fa-earth-europe"></i></a></li>
+            <li><a href="#skills" id="skills-btn-sm"><i class="fa-solid fa-fingerprint"></i></a></li>
+            <li><a href="#managing" id="managing-btn-sm"><i class="fa-solid fa-people-roof"></i></a></li>
+            <li><a href="#development" id="dev-btn-sm"><i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#teaching" id="teaching-btn-sm"><i class="fa-solid fa-chalkboard-user"></i></a></li>
+            <li><a href="#learning" id="learning-btn-sm"><i class="fa-solid fa-lines-leaning"></i></a></li>
+            <li><a href="#languages" id="languages-btn-sm"><i class="fa-solid fa-earth-europe"></i></a></li>
           </ul>
         </div>
         <div id="desktop-navbar">
@@ -636,7 +636,10 @@
         const navbar = document.getElementById('navbar');
         const sections = document.querySelectorAll('section');
         const linksBeforeFilter = document.querySelectorAll('a');
-        const links = Array.from(linksBeforeFilter).filter(link => link.id !== 'logo');
+        const links = Array.from(linksBeforeFilter).filter(link =>
+            link.id !== 'logo' && !link.classList.contains('nav-item')
+        );
+        const desktopNavLinks = document.querySelectorAll('.nav-item');
         const footer = document.getElementById('footer');
         const skillsBtn = document.getElementById('skills-btn');
         const managingBtn = document.getElementById('managing-btn');
@@ -644,6 +647,12 @@
         const teachingBtn = document.getElementById('teaching-btn');
         const learningBtn = document.getElementById('learning-btn');
         const languagesBtn = document.getElementById('languages-btn');
+        const skillsBtnSm = document.getElementById('skills-btn-sm');
+        const managingBtnSm = document.getElementById('managing-btn-sm');
+        const devBtnSm = document.getElementById('dev-btn-sm');
+        const teachingBtnSm = document.getElementById('teaching-btn-sm');
+        const learningBtnSm = document.getElementById('learning-btn-sm');
+        const languagesBtnSm = document.getElementById('languages-btn-sm');
 
         let currentSection = '';
 
@@ -661,7 +670,8 @@
             navbar.style.backgroundColor = '';
             footer.style.backgroundColor = '';
             skillsBtn.style.color = ''
-            links.forEach(link => {
+            skillsBtnSm.style.color = ''
+            desktopNavLinks.forEach(link => {
                 link.classList.add('nav-item-hover');
                 link.classList.remove('border-transparent');
             });
@@ -671,11 +681,15 @@
             navbar.style.color = '#F5EFEB';
             links.forEach(link => {
                 link.style.color = '#F5EFEB';
-                link.classList.add('nav-item-hover');
-                link.classList.remove('border-transparent');
+            });
+            desktopNavLinks.forEach(link => {
+              link.style.color = '#F5EFEB';
+              link.classList.add('nav-item-hover');
+              link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#101010';
             skillsBtn.style.color = '#B4ADA9';
+            skillsBtnSm.style.color = '#B4ADA9';
             skillsBtn.classList.remove('nav-item-hover');
             skillsBtn.classList.add('border-transparent');
             break;
@@ -684,11 +698,15 @@
             navbar.style.color = '#101010';
             links.forEach(link => {
                 link.style.color = '#101010';
-                link.classList.add('nav-item-hover');
-                link.classList.remove('border-transparent');
+            });
+            desktopNavLinks.forEach(link => {
+              link.style.color = '#101010';
+              link.classList.add('nav-item-hover');
+              link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#F5EFEB';
             teachingBtn.style.color = '#B4ADA9';
+            teachingBtnSm.style.color = '#B4ADA9';
             teachingBtn.classList.remove('nav-item-hover');
             teachingBtn.classList.add('border-transparent');
             break;
@@ -697,11 +715,15 @@
             navbar.style.color = '#F5EFEB';
             links.forEach(link => {
                 link.style.color = '#F5EFEB';
-                link.classList.add('nav-item-hover');
-                link.classList.remove('border-transparent');
+            });
+            desktopNavLinks.forEach(link => {
+              link.style.color = '#F5EFEB';
+              link.classList.add('nav-item-hover');
+              link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#101010';
             devBtn.style.color = '#B4ADA9';
+            devBtnSm.style.color = '#B4ADA9';
             devBtn.classList.remove('nav-item-hover');
             devBtn.classList.add('border-transparent');
             break;
@@ -710,11 +732,15 @@
             navbar.style.color = '#F5EFEB';
             links.forEach(link => {
                 link.style.color = '#F5EFEB';
-                link.classList.add('nav-item-hover');
-                link.classList.remove('border-transparent');
+            });
+            desktopNavLinks.forEach(link => {
+              link.style.color = '#F5EFEB';
+              link.classList.add('nav-item-hover');
+              link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#101010';
             learningBtn.style.color = '#B4ADA9';
+            learningBtnSm.style.color = '#B4ADA9';
             learningBtn.classList.remove('nav-item-hover');
             learningBtn.classList.add('border-transparent');
             break;
@@ -723,11 +749,15 @@
             navbar.style.color = '#101010';
             links.forEach(link => {
                 link.style.color = '#101010';
-                link.classList.add('nav-item-hover');
-                link.classList.remove('border-transparent');
+            });
+            desktopNavLinks.forEach(link => {
+              link.style.color = '#101010';
+              link.classList.add('nav-item-hover');
+              link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#F5EFEB';
             managingBtn.style.color = '#B4ADA9';
+            managingBtnSm.style.color = '#B4ADA9';
             managingBtn.classList.remove('nav-item-hover');
             managingBtn.classList.add('border-transparent');
             break;
@@ -736,11 +766,15 @@
             navbar.style.color = '#101010';
             links.forEach(link => {
                 link.style.color = '#101010';
-                link.classList.add('nav-item-hover');
-                link.classList.remove('border-transparent');
+            });
+            desktopNavLinks.forEach(link => {
+              link.style.color = '#101010';
+              link.classList.add('nav-item-hover');
+              link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#F5EFEB';
             languagesBtn.style.color = '#B4ADA9';
+            languagesBtnSm.style.color = '#B4ADA9';
             languagesBtn.classList.remove('nav-item-hover');
             languagesBtn.classList.add('border-transparent');
             break;
@@ -749,8 +783,11 @@
             navbar.style.color = '#F5EFEB';
             links.forEach(link => {
                 link.style.color = '#F5EFEB';
-                link.classList.add('nav-item-hover');
-                link.classList.remove('border-transparent');
+            });
+            desktopNavLinks.forEach(link => {
+              link.style.color = '#F5EFEB';
+              link.classList.add('nav-item-hover');
+              link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#101010';
             break;

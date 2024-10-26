@@ -268,14 +268,12 @@ nav ul {
   font-size: 14px;
   font-weight: 600;
   border: 1px solid #9b9b9b45;
-  /* background-color: #f5efeb12; */
   border-radius: 5px;
   padding: 6px 14px;
 }
 
 .nav-item-hover:hover {
   border: 1px solid #f4ff77;
-  /* background-color: #f4ff7709; */
 }
 
 .border-transparent {
