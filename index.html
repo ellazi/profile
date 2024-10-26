@@ -18,19 +18,31 @@
         <div class="logo-nav">
           <a id="logo" href="#intro"><img src="images/logo.png" alt="my face"></a>
         </div>
-        <ul>
-          <li><a href="#skills" id="skills-btn"><i class="fa-solid fa-fingerprint"></i></a></li>
-          <li><a href="#managing" id="managing-btn"><i class="fa-solid fa-people-roof"></i></a></li>
-          <li><a href="#development" id="dev-btn"><i class="fa-solid fa-code"></i></a></li>
-          <li><a href="#teaching" id="teaching-btn"><i class="fa-solid fa-chalkboard-user"></i></a></li>
-          <li><a href="#learning" id="learning-btn"><i class="fa-solid fa-lines-leaning"></i></a></li>
-          <li><a href="#languages" id="languages-btn"><i class="fa-solid fa-earth-europe"></i></a></li>
-        </ul>
+        <div id="mobile-navbar">
+          <ul>
+            <li><a href="#skills" id="skills-btn"><i class="fa-solid fa-fingerprint"></i></a></li>
+            <li><a href="#managing" id="managing-btn"><i class="fa-solid fa-people-roof"></i></a></li>
+            <li><a href="#development" id="dev-btn"><i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#teaching" id="teaching-btn"><i class="fa-solid fa-chalkboard-user"></i></a></li>
+            <li><a href="#learning" id="learning-btn"><i class="fa-solid fa-lines-leaning"></i></a></li>
+            <li><a href="#languages" id="languages-btn"><i class="fa-solid fa-earth-europe"></i></a></li>
+          </ul>
+        </div>
+        <div id="desktop-navbar">
+          <ul>
+            <li><a href="#skills" id="skills-btn" class="nav-item nav-item-hover">Skills</a></li>
+            <li><a href="#managing" id="managing-btn" class="nav-item nav-item-hover">Manager</a></li>
+            <li><a href="#development" id="dev-btn" class="nav-item nav-item-hover">Developer</a></li>
+            <li><a href="#teaching" id="teaching-btn" class="nav-item nav-item-hover">Teacher</a></li>
+            <li><a href="#learning" id="learning-btn" class="nav-item nav-item-hover">Education</a></li>
+            <li><a href="#languages" id="languages-btn" class="nav-item nav-item-hover">Languages</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <section id="intro">
-      <div class="video-background">
+      <div class="video-background black-veil">
         <video autoplay muted loop>
           <source src="videos/life_is_landscape.mp4" type="video/mp4">
         </video>
@@ -623,7 +635,8 @@
       document.addEventListener('scroll', function() {
         const navbar = document.getElementById('navbar');
         const sections = document.querySelectorAll('section');
-        const links = document.querySelectorAll('a');
+        const linksBeforeFilter = document.querySelectorAll('a');
+        const links = Array.from(linksBeforeFilter).filter(link => link.id !== 'logo');
         const footer = document.getElementById('footer');
         const skillsBtn = document.getElementById('skills-btn');
         const managingBtn = document.getElementById('managing-btn');
@@ -648,66 +661,96 @@
             navbar.style.backgroundColor = '';
             footer.style.backgroundColor = '';
             skillsBtn.style.color = ''
+            links.forEach(link => {
+                link.classList.add('nav-item-hover');
+                link.classList.remove('border-transparent');
+            });
             break;
           case 'skills':
             navbar.style.backgroundColor = '#101010';
             navbar.style.color = '#F5EFEB';
             links.forEach(link => {
                 link.style.color = '#F5EFEB';
+                link.classList.add('nav-item-hover');
+                link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#101010';
-            skillsBtn.style.color = '#B4ADA9'
+            skillsBtn.style.color = '#B4ADA9';
+            skillsBtn.classList.remove('nav-item-hover');
+            skillsBtn.classList.add('border-transparent');
             break;
           case 'teaching':
             navbar.style.backgroundColor = '#F5EFEB';
             navbar.style.color = '#101010';
             links.forEach(link => {
                 link.style.color = '#101010';
+                link.classList.add('nav-item-hover');
+                link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#F5EFEB';
-            teachingBtn.style.color = '#B4ADA9'
+            teachingBtn.style.color = '#B4ADA9';
+            teachingBtn.classList.remove('nav-item-hover');
+            teachingBtn.classList.add('border-transparent');
             break;
           case 'development':
             navbar.style.backgroundColor = '#101010';
             navbar.style.color = '#F5EFEB';
             links.forEach(link => {
                 link.style.color = '#F5EFEB';
+                link.classList.add('nav-item-hover');
+                link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#101010';
-            devBtn.style.color = '#B4ADA9'
+            devBtn.style.color = '#B4ADA9';
+            devBtn.classList.remove('nav-item-hover');
+            devBtn.classList.add('border-transparent');
             break;
           case 'learning':
             navbar.style.backgroundColor = '#101010';
             navbar.style.color = '#F5EFEB';
             links.forEach(link => {
                 link.style.color = '#F5EFEB';
+                link.classList.add('nav-item-hover');
+                link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#101010';
-            learningBtn.style.color = '#B4ADA9'
+            learningBtn.style.color = '#B4ADA9';
+            learningBtn.classList.remove('nav-item-hover');
+            learningBtn.classList.add('border-transparent');
             break;
           case 'managing':
             navbar.style.backgroundColor = '#F5EFEB';
             navbar.style.color = '#101010';
             links.forEach(link => {
                 link.style.color = '#101010';
+                link.classList.add('nav-item-hover');
+                link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#F5EFEB';
-            managingBtn.style.color = '#B4ADA9'
+            managingBtn.style.color = '#B4ADA9';
+            managingBtn.classList.remove('nav-item-hover');
+            managingBtn.classList.add('border-transparent');
             break;
           case 'languages':
             navbar.style.backgroundColor = '#F5EFEB';
             navbar.style.color = '#101010';
             links.forEach(link => {
                 link.style.color = '#101010';
+                link.classList.add('nav-item-hover');
+                link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#F5EFEB';
-            languagesBtn.style.color = '#B4ADA9'
+            languagesBtn.style.color = '#B4ADA9';
+            languagesBtn.classList.remove('nav-item-hover');
+            languagesBtn.classList.add('border-transparent');
             break;
           default:
             navbar.style.backgroundColor = '#101010';
             navbar.style.color = '#F5EFEB';
             links.forEach(link => {
                 link.style.color = '#F5EFEB';
+                link.classList.add('nav-item-hover');
+                link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#101010';
             break;
