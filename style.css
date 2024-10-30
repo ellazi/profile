@@ -14,7 +14,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #101010;
   color: #F5EFEB;
-  font-size: 14px;
   margin: 0 auto;
 }
 
@@ -24,13 +23,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 40px !important;
+  font-size: 2.1em !important;
+}
+
+p {
+  font-size: 0.85em;
 }
 
 a {
   text-decoration: none;
   color: #F5EFEB;
-  font-size: 20px;
+  font-size: 0.9em;
+}
+
+#footer a {
+  font-size: 1.2em;
 }
 
 button {
@@ -261,11 +268,11 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   width: fit-content;
-  gap: 15px;
+  gap: 1em;
 }
 
 .nav-item {
-  font-size: 14px;
+  /* font-size: 1em; */
   font-weight: 600;
   border: 1px solid #9b9b9b45;
   border-radius: 5px;
@@ -433,7 +440,7 @@ footer ul {
 }
 
 .scroll-cue {
-  font-size: 18px;
+  font-size: 1.2em;
   text-align: center;
   position: relative;
   animation: opacitySwitch 3s ease-in-out infinite;
@@ -491,7 +498,7 @@ footer ul {
 }
 
 .project a {
-  font-size: 14px;
+  /* font-size: 0.9em; */
   color: #F5EFEB !important;
 }
 
