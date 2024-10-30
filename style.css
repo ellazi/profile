@@ -19,7 +19,7 @@ body {
   background-color: #101010;
   color: #F5EFEB;
   margin: 0 auto;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -676,15 +676,15 @@ footer ul {
   }
 
   #mobile-navbar a {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   #footer a {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   #footer ul {
-    width: 120px;
+    width: 100px;
   }
 }
 
