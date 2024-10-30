@@ -5,6 +5,10 @@ body, html {
   scroll-behavior: smooth;
 }
 
+html {
+  font-size: 100%;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -15,6 +19,7 @@ body {
   background-color: #101010;
   color: #F5EFEB;
   margin: 0 auto;
+  font-size: 0.875rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,21 +28,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.1em !important;
-}
-
-p {
-  font-size: 0.85em;
+  font-size: 2.4em;
 }
 
 a {
   text-decoration: none;
   color: #F5EFEB;
-  font-size: 0.9em;
 }
 
 #footer a {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 button {
@@ -673,6 +673,18 @@ footer ul {
 
   #mobile-navbar {
     display: block;
+  }
+
+  #mobile-navbar a {
+    font-size: 2em;
+  }
+
+  #footer a {
+    font-size: 2em;
+  }
+
+  #footer ul {
+    width: 120px;
   }
 }
 
