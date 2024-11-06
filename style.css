@@ -221,44 +221,6 @@ a {
   margin-top: 2em;
 }
 
-/* .flex-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5em;
-  justify-content: space-between;
-  margin: 2em 0;
-  overflow: hidden;
-}
-
-.flex-grid-inner {
-  max-width: 100%;
-  max-height: 40vh;
-  gap: 1em;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-} */
-
-/* .flex-item {
-  box-sizing: border-box;
-  width: 320px;
-}
-
-.flex-grid-inner:last-child {
-  margin-bottom: 2em;
-}
-
-.flex-item img {
-  width: 320px;
-  height: 160px;
-  display: block;
-  object-fit: cover;
-} */
-
 /* sections */
 section {
   padding: 3em 0 3em 0;
@@ -636,6 +598,7 @@ footer ul {
 }
 
 .nav-btn {
+  font-family: 'Montserrat', sans-serif;
   color: #F5EFEB;
   background-color: #101010;
   border: 1px solid #f5efeb2d;
@@ -646,12 +609,10 @@ footer ul {
 }
 
 .nav-btn:hover {
-  /* color:#F5EFEB; */
   border: 1px solid #F4FF77;
 }
 
 .nav-btn:active {
-  /* color: #F4FF77; */
   border: 1px solid #F4FF77;
 }
 
@@ -683,13 +644,13 @@ footer ul {
     height: 45vh;
   }
 
-  .outer-div-reviews {
+  /* .outer-div-reviews {
     max-height: fit-content;
   }
 
   .outer-div-projects {
     max-height: fit-content;
-  }
+  } */
 
   .point-down {
     display: none;
