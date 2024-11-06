@@ -104,8 +104,9 @@ a {
 }
 
 .project p {
-  color: #f5efeb;
+  color: #f5efeb9e;
   /* color: #F4FF77; */
+  /* color:#757575; */
   margin: 0;
 }
 
@@ -549,7 +550,6 @@ footer ul {
 
 .project h4 {
   margin-bottom: 1em;
-  color: #F4FF77;
 }
 
 .flex-container-ui {
