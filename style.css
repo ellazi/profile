@@ -60,6 +60,7 @@ h2 {
   color: #101010;
   font-weight: 500;
   padding: 3px 10px;
+  display: inline-block;
 }
 
 .yellow-highlight a {
@@ -103,7 +104,7 @@ a {
 }
 
 .project p {
-  color: #f5efeb7e;
+  color: #f5efeb;
   /* color: #F4FF77; */
   margin: 0;
 }
@@ -548,6 +549,7 @@ footer ul {
 
 .project h4 {
   margin-bottom: 1em;
+  color: #F4FF77;
 }
 
 .flex-container-ui {
@@ -682,6 +684,10 @@ footer ul {
   }
 
   .outer-div-reviews {
+    max-height: fit-content;
+  }
+
+  .outer-div-projects {
     max-height: fit-content;
   }
 
