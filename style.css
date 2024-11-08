@@ -133,6 +133,12 @@ a {
   align-items: center;
 }
 
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -205,8 +211,8 @@ a {
   align-items: flex-end;
 }
 
-.t5 {
-  margin-top: 5em;
+.t1 {
+  margin-top: 1em;
 }
 
 .t4 {
