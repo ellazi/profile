@@ -286,10 +286,15 @@ nav ul {
   border: 1px solid #9b9b9b45;
   border-radius: 5px;
   padding: 6px 14px;
+  display: inline-block;
+  text-shadow: 0 0 0.5px #828282;
 }
 
 .nav-item-hover:hover {
+  border-radius: 50px;
   border: 1px solid #f4ff77;
+  transition: border-radius 0.5s ease-in-out;
+  box-shadow: 0 0 3px #dcf000;
 }
 
 .border-transparent {
