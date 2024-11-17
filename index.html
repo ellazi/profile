@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header id="navbar">
+    <header id="navbar" class="background-transition">
       <nav class="flex">
         <!-- <a href="#intro"><i class="fa-solid fa-umbrella"></i></a> -->
         <div class="logo-nav">
@@ -33,12 +33,12 @@
         </div>
         <div id="desktop-navbar">
           <ul>
-            <li><a href="#skills" id="skills-btn" class="nav-item nav-item-hover">Skills</a></li>
-            <li><a href="#managing" id="managing-btn" class="nav-item nav-item-hover">Manager</a></li>
-            <li><a href="#development" id="dev-btn" class="nav-item nav-item-hover">Developer</a></li>
-            <li><a href="#teaching" id="teaching-btn" class="nav-item nav-item-hover">Teacher</a></li>
-            <li><a href="#learning" id="learning-btn" class="nav-item nav-item-hover">Education</a></li>
-            <li><a href="#languages" id="languages-btn" class="nav-item nav-item-hover">Languages</a></li>
+            <li><a href="#skills" id="skills-btn" class="nav-item nav-item-hover nav-item-hover-light"><span class="nav-text">Skills</span></a></li>
+            <li><a href="#managing" id="managing-btn" class="nav-item nav-item-hover nav-item-hover-light"><span class="nav-text">Manager</span></a></li>
+            <li><a href="#development" id="dev-btn" class="nav-item nav-item-hover nav-item-hover-light"><span class="nav-text">Developer</span></a></li>
+            <li><a href="#teaching" id="teaching-btn" class="nav-item nav-item-hover nav-item-hover-light"><span class="nav-text">Teacher</span></a></li>
+            <li><a href="#learning" id="learning-btn" class="nav-item nav-item-hover nav-item-hover-light"><span class="nav-text">Education</span></a></li>
+            <li><a href="#languages" id="languages-btn" class="nav-item nav-item-hover nav-item-hover-light"><span class="nav-text">Languages</span></a></li>
           </ul>
         </div>
       </nav>
@@ -689,7 +689,7 @@
       </div>
     </section>
 
-    <footer id="footer">
+    <footer id="footer" class="background-transition">
       <ul>
         <li><a href="https://it.linkedin.com/in/rossella-pellizzi" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
         <li><a href="mailto:prellizzi@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
@@ -739,7 +739,9 @@
             skillsBtnSm.style.color = ''
             desktopNavLinks.forEach(link => {
                 link.classList.add('nav-item-hover');
+                link.classList.add('nav-item-hover-light');
                 link.classList.remove('border-transparent');
+                link.classList.remove('nav-item-hover-dark');
             });
             break;
           case 'skills':
@@ -751,12 +753,15 @@
             desktopNavLinks.forEach(link => {
               link.style.color = '#F5EFEB';
               link.classList.add('nav-item-hover');
+              link.classList.add('nav-item-hover-light');
+              link.classList.remove('nav-item-hover-dark');
               link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#101010';
             skillsBtn.style.color = '#B4ADA9';
             skillsBtnSm.style.color = '#B4ADA9';
             skillsBtn.classList.remove('nav-item-hover');
+            skillsBtn.classList.remove('nav-item-hover-light');
             skillsBtn.classList.add('border-transparent');
             break;
           case 'teaching':
@@ -766,6 +771,8 @@
                 link.style.color = '#101010';
             });
             desktopNavLinks.forEach(link => {
+              link.classList.remove('nav-item-hover-light');
+              link.classList.add('nav-item-hover-dark');
               link.style.color = '#101010';
               link.classList.add('nav-item-hover');
               link.classList.remove('border-transparent');
@@ -774,6 +781,7 @@
             teachingBtn.style.color = '#B4ADA9';
             teachingBtnSm.style.color = '#B4ADA9';
             teachingBtn.classList.remove('nav-item-hover');
+            teachingBtn.classList.remove('nav-item-hover-dark');
             teachingBtn.classList.add('border-transparent');
             break;
           case 'development':
@@ -786,12 +794,15 @@
               link.style.color = '#F5EFEB';
               link.classList.add('nav-item-hover');
               link.classList.remove('border-transparent');
+              link.classList.add('nav-item-hover-light');
+              link.classList.remove('nav-item-hover-dark');
             });
             footer.style.backgroundColor = '#101010';
             devBtn.style.color = '#B4ADA9';
             devBtnSm.style.color = '#B4ADA9';
             devBtn.classList.remove('nav-item-hover');
             devBtn.classList.add('border-transparent');
+            devBtn.classList.remove('nav-item-hover-light');
             break;
           case 'learning':
             navbar.style.backgroundColor = '#101010';
@@ -803,12 +814,15 @@
               link.style.color = '#F5EFEB';
               link.classList.add('nav-item-hover');
               link.classList.remove('border-transparent');
+              link.classList.add('nav-item-hover-light');
+              link.classList.remove('nav-item-hover-dark');
             });
             footer.style.backgroundColor = '#101010';
             learningBtn.style.color = '#B4ADA9';
             learningBtnSm.style.color = '#B4ADA9';
             learningBtn.classList.remove('nav-item-hover');
             learningBtn.classList.add('border-transparent');
+            learningBtn.classList.remove('nav-item-hover-light');
             break;
           case 'managing':
             navbar.style.backgroundColor = '#F5EFEB';
@@ -820,12 +834,15 @@
               link.style.color = '#101010';
               link.classList.add('nav-item-hover');
               link.classList.remove('border-transparent');
+              link.classList.add('nav-item-hover-dark');
+              link.classList.remove('nav-item-hover-light');
             });
             footer.style.backgroundColor = '#F5EFEB';
             managingBtn.style.color = '#B4ADA9';
             managingBtnSm.style.color = '#B4ADA9';
             managingBtn.classList.remove('nav-item-hover');
             managingBtn.classList.add('border-transparent');
+            managingBtn.classList.remove('nav-item-hover-dark');
             break;
           case 'languages':
             navbar.style.backgroundColor = '#F5EFEB';
@@ -837,12 +854,15 @@
               link.style.color = '#101010';
               link.classList.add('nav-item-hover');
               link.classList.remove('border-transparent');
+              link.classList.add('nav-item-hover-dark');
+              link.classList.remove('nav-item-hover-light');
             });
             footer.style.backgroundColor = '#F5EFEB';
             languagesBtn.style.color = '#B4ADA9';
             languagesBtnSm.style.color = '#B4ADA9';
             languagesBtn.classList.remove('nav-item-hover');
             languagesBtn.classList.add('border-transparent');
+            languagesBtn.classList.remove('nav-item-hover-dark');
             break;
           default:
             navbar.style.backgroundColor = '#101010';
@@ -853,6 +873,7 @@
             desktopNavLinks.forEach(link => {
               link.style.color = '#F5EFEB';
               link.classList.add('nav-item-hover');
+              link.classList.add('nav-item-hover-light');
               link.classList.remove('border-transparent');
             });
             footer.style.backgroundColor = '#101010';
