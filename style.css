@@ -589,7 +589,7 @@ footer ul {
   width: 100%;
 }
 
-/* .carousel-btns {
+.carousel-btns {
   position: relative;
   bottom: 150px;
   width: 95%;
@@ -599,6 +599,7 @@ footer ul {
   padding: 0 10px;
   z-index: 10;
   margin: 0 auto;
+  opacity: 0;
 }
 
 .carousel-btns button {
@@ -611,7 +612,7 @@ footer ul {
   color: #757575;
 }
 
-.slide-title {
+/* .slide-title {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -625,7 +626,7 @@ footer ul {
 } */
 
 .carousel-nav-btns {
-  margin-top: 2em;
+  margin-top: 1em;
   display: flex;
   justify-content: space-between;
   gap: 1em;
