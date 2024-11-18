@@ -300,72 +300,73 @@
                 </div>
               </div>
             </div>
-            <p class="t3">I was a freelance web designer after graduating in <br>Product Design.
-              I would develop static websites for small businesses, but whenever I wanted to
-              create something more complex I felt I lacked technical knowledge. <br>
-              The bootcamp allowed me to gain that.
-            </p>
-            <p>Here are some projects I worked on during and after graduating from Le Wagon.<br><br>
-              <i>Click on the project description to view the GitHub repository, or scroll down to see a preview of the final product.</i>
+            <p>
+              In the past, I worked as a web designer, creating static websites using HTML,
+              CSS, and WordPress. These projects helped me build a solid foundation in web design
+              and develop a strong sense of aesthetics and functionality.
+              <br><br>
+              Recently, I've focused on web development with Rails, combining creativity
+              with robust backend technologies. The projects showcased here are built using
+              Ruby on Rails, HTML, CSS, and JavaScript. They feature PostgreSQL as the database,
+              seeded with semi-realistic data using Faker, and Active Record for efficient database management.
+              I've also integrated tools like Devise for authentication and Geocoder for location-based features.
+              <br><br>
+              Please feel free to explore.
             </p>
           </div>
-          <div class="flex-right outer-div-projects">
-            <div class="project">
-              <h4>Regal Art</h4>
-              <a href="https://github.com/finnstraehle/regal_art" target="_blank">
-                <p>Collaboratively developed using Ruby on Rails during an intensive two weeks project as part of the full stack development bootcamp.</p>
-              </a>
-            </div>
-
-            <div class="project">
-              <h4>Havens</h4>
-              <a href="https://github.com/ellazi/hosting-image-upload" target="_blank">
-                <p>Starting as an Airbnb clone, and purely coding exercise, it eventually evolved into a platform to discuss the issue of housing in big cities.</p>
-              </a>
-            </div>
-
-            <div class="project">
-              <h4>Artigiani</h4>
-              <a href="https://github.com/ellazi/artigiani" target="_blank">
-                <p>An artisan marketplace: a platform for creators to showcase their craft. Artisans can create profiles, upload products for sale, and share their upcoming market appearances across Europe.</p>
-              </a>
-            </div>
+          <div class="flex-right">
+            <video width="100%" height="100%" class="t2" controls autoplay muted loop>
+              <source src="videos/figma_regalart.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </div>
-      <div class="flex-container-ui">
-        <div class="flex-left-ui">
-          <video width="100%" height="100%" controls autoplay muted loop>
-            <source src="videos/figma_regalart.mp4" type="video/mp4">
-          </video>
+      <div class="container t3">
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide" id="regal">
+              <video src="./videos/regal-xxs.mp4" autoplay muted loop controls></video>
+            </div>
+            <div class="slide" id="artigiani">
+              <video src="./videos/artigiani-xsm.mp4" autoplay muted loop controls></video>
+            </div>
+            <div class="slide" id="havens">
+              <video src="./videos/havens-xsm.mp4" autoplay muted loop controls></video>
+            </div>
+          </div>
+          <!-- <div class="carousel-btns">
+            <button id="prevButton">
+              <i class="fa-solid fa-angle-down fa-rotate-90 fa-2xl"></i>
+            </button>
+            <button id="nextButton">
+              <i class="fa-solid fa-angle-down fa-rotate-270 fa-2xl"></i>
+            </button>
+          </div> -->
         </div>
-        <div class="flex-right-ui">
-          <div class="carousel-nav-btns">
-            <button class="nav-btn" data-slide-id="regal">Regal Art</button>
-            <button class="nav-btn" data-slide-id="artigiani">Artigiani</button>
-            <button class="nav-btn" data-slide-id="havens">Havens</button>
-          </div>
-          <div class="carousel">
-            <div class="slides">
-              <div class="slide" id="regal">
-                <video src="./videos/regal-xxs.mp4" autoplay muted loop controls></video>
-              </div>
-              <div class="slide" id="artigiani">
-                <video src="./videos/artigiani-xsm.mp4" autoplay muted loop controls></video>
-              </div>
-              <div class="slide" id="havens">
-                <video src="./videos/havens-xsm.mp4" autoplay muted loop controls></video>
-              </div>
-            </div>
-            <div class="carousel-btns">
-              <button id="prevButton">
-                <i class="fa-solid fa-angle-down fa-rotate-90 fa-2xl"></i>
-              </button>
-              <button id="nextButton">
-                <i class="fa-solid fa-angle-down fa-rotate-270 fa-2xl"></i>
-              </button>
-            </div>
-          </div>
+        <div class="carousel-nav-btns">
+          <button class="nav-btn" data-slide-id="regal">
+            <div class="project-name"><p>regal art</p><a href="https://github.com/finnstraehle/regal_art" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+            <p>
+              Collaboratively developed using Ruby on Rails during an intensive two weeks project at Le Wagon.
+              This app connects artists to potential buyers. Allowing artists to showcase their work and buyers to discover them, atteding events and directly message them.
+            </p>
+          </button>
+
+          <button class="nav-btn" data-slide-id="artigiani">
+            <div class="project-name"><p>artigiani</p><a href="https://github.com/ellazi/artigiani" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+            <p>
+              An artisan marketplace: a platform for creators to showcase their craft. Artisans can create profiles, upload products for sale, and share their upcoming market appearances across Europe.
+              Developed in Rails, it includes devise, cloudinary, and geocoder.
+            </p>
+          </button>
+
+          <button class="nav-btn" data-slide-id="havens">
+            <div class="project-name"><p>havens</p><a href="https://github.com/ellazi/hosting-image-upload" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+            <p>
+              Starting as an Airbnb clone, and purely coding exercise, it eventually evolved into a platform to discuss the issue of housing in big cities.
+              Developed in Rails, it includes devise, cloudinary, and geocoder, can add reviews and post comments.
+            </p>
+          </button>
         </div>
       </div>
     </section>
