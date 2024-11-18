@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 /* General styling */
 body, html {
   margin: 0;
@@ -94,17 +92,15 @@ a {
   color: #F5EFEB;
 }
 
-.project a {
+/* .project a {
   display: inline-block;
   padding: 0.7em 1em;
   width: fit-content;
   height: fit-content;
-  /* background-color: #f4ff771a; */
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .project p {
-  /* color: #f5efeb9e; */
   color: #F5EFEB;
   margin: 0;
 }
@@ -115,7 +111,7 @@ a {
 
 .project a:hover p {
   color: #101010;
-}
+} */
 
 #footer a {
   font-size: 1.4em;
@@ -528,7 +524,11 @@ footer ul {
   margin: 0;
 }
 
-.video-container {
+#development .flex-right {
+  height: 450px;
+}
+
+/* .video-container {
   margin: 3em 0 1em 0;
 }
 
@@ -539,9 +539,9 @@ footer ul {
 .project h4 {
   margin-bottom: 1em;
   color: #F4FF77;
-}
+} */
 
-.flex-container-ui {
+/* .flex-container-ui {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -559,7 +559,7 @@ footer ul {
 
 .flex-right-ui {
   width: calc(100% - 370px);
-}
+} */
 
 /* carousel */
 .carousel {
@@ -686,37 +686,21 @@ footer ul {
     height: 45vh;
   }
 
-  /* .outer-div-reviews {
+  .outer-div-reviews {
     max-height: fit-content;
   }
 
   .outer-div-projects {
     max-height: fit-content;
-  } */
+  }
 
   .point-down {
     display: none;
   }
 
-  .flex-container-ui {
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .flex-left-ui, .flex-right-ui {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .flex-right-ui {
-    order: -1;
-  }
-
-  .carousel {
+  /* .carousel {
     height: max-content;
-  }
+  } */
 }
 
 @media (max-width: 780px) {
@@ -738,32 +722,42 @@ footer ul {
 }
 
 @media (max-width: 720px) {
-  .flex-container-ui {
+  .carousel-nav-btns {
     flex-direction: column;
   }
 
-  .flex-right-ui {
+  .nav-btn {
+    width: 100%;
+  }
+
+  #development .flex-right {
+    margin-top: 2em;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* .flex-right-ui {
     width: 100%;
   }
 
   .flex-left-ui {
     width: 100%;
-  }
+  } */
 
-  .carousel {
+  /* .carousel {
     transform: rotate(270deg);
     transform-origin: top left;
     top: 78vh;
     width: 78vh;
     height: 100%;
-  }
+  } */
 
-  .flex-right-ui {
+  /* .flex-right-ui {
     overflow: hidden;
     height: 85vh;
     width: 100%;
     margin: auto;
-  }
+  } */
 }
 
 @media (max-width: 540px) {
