@@ -64,7 +64,7 @@ p {
 }
 
 .blue {
-  color: #4BC2E5;
+  color: #41AACA;
 }
 
 .purple {
@@ -182,10 +182,6 @@ a {
   width: 50%;
   align-self: flex-start;
 }
-
-/* .flex-50 h4 {
-  margin-top: 1em;
-} */
 
 .flex-50 img {
   max-width: 100%;
@@ -629,6 +625,16 @@ footer ul {
 
 .project-name p {
   margin: 0;
+  font-size: 0.95rem;
+}
+
+.project-name a {
+  font-size: 0.95rem;
+}
+
+.nav-btn p {
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 
 .nav-btn:hover {
