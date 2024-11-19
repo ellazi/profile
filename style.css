@@ -95,9 +95,11 @@ a {
 
 /* Text decorations */
 .yellow-highlight {
-  background-color: #f4ff77e0;
-  font-weight: 400;
+  background-color: #f4ff77d0;
+  font-weight: 500;
+  color: #101010;
   padding: 0 5px;
+  line-height: 1em;
   display: inline-block;
 }
 
@@ -212,6 +214,10 @@ a {
   margin-bottom: 0;
 }
 
+.mb03 {
+  margin-bottom: 0.3em;
+}
+
 .mt0 {
   margin-top: 0;
 }
@@ -234,6 +240,10 @@ a {
 
 .t2 {
   margin-top: 2em;
+}
+
+.article {
+  padding-bottom: 0.8em;
 }
 
 /* sections */
@@ -698,13 +708,17 @@ footer ul {
 }
 
 @media (max-width: 720px) {
+  h1 {
+    font-size: 2.3em;
+  }
+
   .carousel-nav-btns {
     flex-direction: column;
   }
   .carousel-nav-btns .nav-btn {
     width: 100%;
   }
-  
+
   #development .flex-right {
     margin-top: 2em;
     width: 100%;
