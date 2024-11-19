@@ -685,7 +685,7 @@ footer ul {
   }
   .intro-right {
     width: 100%;
-    height: 100%;
+    height: 50%;
   }
 }
 
@@ -711,7 +711,7 @@ footer ul {
   #intro h1 {
     font-size: 2.8em;
   }
-  
+
   h1 {
     font-size: 2.3em;
   }

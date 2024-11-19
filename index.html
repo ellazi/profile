@@ -698,6 +698,7 @@
         const footer = document.querySelector('#footer');
         const introRight = document.querySelector('.intro-right');
         const videoBackground = document.querySelector('.video-background');
+        const width = window.innerWidth;
 
         const links = Array.from(document.querySelectorAll('a')).filter(
           link => link.id !== 'logo' && !link.classList.contains('nav-item')
@@ -754,14 +755,25 @@
             videoBackground.style.width = '0';
           } else {
             // Scrolling up
-            introRight.style.width = '50%';
-            videoBackground.style.opacity = '1';
-            videoBackground.style.width = '50%';
+            if (width > 960) {
+              introRight.style.width = '50%';
+              videoBackground.style.opacity = '1';
+              videoBackground.style.width = '50%';
+            } else {
+              introRight.style.width = '100%';
+              videoBackground.style.opacity = '1';
+              videoBackground.style.width = '100%';
+            }
           }
         } else {
           // Default styles outside the #intro and #skills sections
-          introRight.style.width = '50%';
-          videoBackground.style.opacity = '1';
+          if (width > 960) {
+            introRight.style.width = '50%';
+            videoBackground.style.opacity = '1';
+          } else {
+            introRight.style.width = '100%';
+            videoBackground.style.opacity = '1';
+          }
         }
 
         // Switch styles based on the current section
