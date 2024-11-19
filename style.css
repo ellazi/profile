@@ -708,6 +708,10 @@ footer ul {
 }
 
 @media (max-width: 720px) {
+  #intro h1 {
+    font-size: 2.8em;
+  }
+  
   h1 {
     font-size: 2.3em;
   }
