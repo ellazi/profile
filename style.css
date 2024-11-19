@@ -60,23 +60,23 @@ p {
 }
 
 .green {
-  color: #23967F;
+  color: #2BC2A4;
 }
 
 .blue {
-  color: #358BA5;
+  color: #4BC2E5;
 }
 
 .purple {
-  color: #6877C3;
+  color: #7C90F6;
 }
 
 .red {
-  color: #CA616D;
+  color: #FF7180;
 }
 
 .pink {
-  color: #CE9091;
+  color: #EE9B9C;
 }
 
 .dark {
@@ -701,17 +701,15 @@ footer ul {
   .carousel-nav-btns {
     flex-direction: column;
   }
-
-  .nav-btn {
+  .carousel-nav-btns .nav-btn {
     width: 100%;
   }
-
+  
   #development .flex-right {
     margin-top: 2em;
     width: 100%;
     height: 100%;
   }
-
   .add-mt-responsive {
     margin-top: 2em;
   }
