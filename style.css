@@ -504,14 +504,14 @@ footer ul {
 
 /* teaching */
 .outer-div-reviews {
-  max-height: 330px;
+  max-height: 430px;
   width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  margin: 1em 0;
+  margin: 0;
 }
 
 .review-name {
