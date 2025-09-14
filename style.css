@@ -14,6 +14,12 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Font styles */
 body {
   font-family: "Figtree", sans-serif;
@@ -21,7 +27,7 @@ body {
   background-color: #101010;
   color: #F5EFEB;
   margin: 0 auto;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 h4, h5, h6 {
@@ -52,6 +58,10 @@ p {
 
 .right {
   text-align: right;
+}
+
+ul {
+  padding-left: 1em;
 }
 
 /* Colours */
@@ -93,6 +103,16 @@ a {
   font-size: 1.4em;
 }
 
+.link-special {
+  font-weight: 600;
+  color: #ff6b6e;
+  font-family: "Lora", serif;
+}
+
+.link-special:hover {
+  color:#2BC2A4;
+}
+
 /* Text decorations */
 .yellow-highlight {
   background-color: #f4ff77d0;
@@ -100,6 +120,16 @@ a {
   color: #101010;
   padding: 0 5px;
   line-height: 1em;
+  display: inline-block;
+}
+
+.light-highlight {
+  background-color: #F5EFEB;
+  /* font-weight: 500; */
+  color: #101010;
+  padding: 4px 12px;
+  margin-bottom: 0.5rem;
+  /* line-height: 2rem; */
   display: inline-block;
 }
 
@@ -137,6 +167,20 @@ a {
 }
 
 .flex-container p, .flex-left, .flex-right {
+  width: 100%;
+}
+
+.light-background {
+  background-color: #F5EFEB;
+  color: #101010;
+  padding: 1.6em;
+  width: 100%;
+}
+
+.dark-background {
+  background-color: #101010;
+  color: #F5EFEB;
+  padding: 1.6em;
   width: 100%;
 }
 
@@ -245,15 +289,15 @@ a {
 /* sections */
 section {
   padding: 3em 0 3em 0;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 30px);
 }
 
-#skills, #development, #intro, #learning {
+#lanlands, #development, #intro, #learning {
   background-color: #101010;
   color: #F5EFEB;
 }
 
-#teaching, #managing, #languages {
+#skills, #teaching, #managing, #languages {
   background-color: #F5EFEB;
   color: #101010;
 }
@@ -274,6 +318,10 @@ header {
 nav {
   width: 90%;
   margin: 0 auto;
+}
+
+#navbar {
+  height: fit-content;
   padding: 0.5em 0;
 }
 
@@ -463,7 +511,7 @@ footer ul {
 }
 
 .bio-image {
-  border-bottom: #F5EFEB 1px solid;
+  /* border-bottom: #F5EFEB 1px solid; */
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -502,9 +550,104 @@ footer ul {
   margin: 5px;
 }
 
+.list-no-indentation {
+  padding-left: 12px;
+}
+
+.list-no-indentation li {
+  padding-bottom: 10px;
+}
+
+/* lanlands */
+.lanlands-container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  border: none !important;
+}
+
+.gap1 {
+  gap: 1em;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.lanlands-container video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lanlands-container .wide {
+  width: 80%;
+  text-align: left;
+}
+
+.lanlands-container .narrow {
+  width: 20%;
+  text-align: left;
+  background-color: #F5EFEB;
+  padding: 1.6em;
+  color: #101010;
+}
+
+.lanlands-container .mobile {
+  width: 30%;
+  text-align: left;
+}
+
+.lanlands-container .mobile video {
+  border-radius: 20px;
+  border:1px solid #F5EFEB;
+}
+
+.lanlands-container .grid {
+  width: 70%;
+  text-align: left;
+}
+
+.lanlands-container .details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 0.5em;
+}
+
+.lanlands-container .card-details {
+  width: 100%;
+  height: 9em;
+  display: flex;
+  align-items: stretch;
+  outline: 1px dashed black;
+  outline-offset: -5px;
+}
+
+.border-outlined {
+  outline: 1px dashed black;
+  outline-offset: -5px;
+  border: none;
+}
+
+.lanlands-container .card-details img, .lanlands-container .card-details video {
+  height: 100%;
+  width: 9em;
+}
+
+.bear-container {
+  position: absolute;
+  bottom: -7px;
+  left: 50px;
+  z-index: 10;
+}
+
+.bear-box {
+  position: relative;
+}
+
 /* teaching */
 .outer-div-reviews {
-  max-height: 360px;
   width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -512,23 +655,24 @@ footer ul {
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2.5rem;
+}
+
+.height-360 {
+  max-height: 38em;
+}
+
+.height-700 {
+  max-height: 74em;
 }
 
 .review-name {
   font-weight: 700;
-}
-
-.review-name p {
   margin: 0;
   padding: 0;
-}
-
-.review {
-  padding: 0 0 0.5em 0;
-}
-
-.review p {
-  margin: 0.5em 0;
 }
 
 /* web */
@@ -545,6 +689,56 @@ footer ul {
 
 #development .flex-right {
   height: 450px;
+}
+
+.project-info {
+  font-family: "Figtree", sans-serif;
+  color: #A6A2A0;
+  background-color: #101010;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 0;
+}
+
+.svg-a {
+  filter: brightness(100%);
+}
+
+.svg-a:hover {
+  filter: brightness(80%);
+}
+
+.new-project-info {
+  margin-top: 2em;
+  margin-bottom: 6em;
+}
+
+.new-project-visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1em;
+  width: 100%;
+}
+
+.new-project-visual .video {
+  width: 60%;
+}
+
+.new-project-visual .video video {
+  width: 100%;
+  height: 100%;
+}
+
+.new-project-visual .image {
+  width: 40%;
+}
+
+.new-project-visual .image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 /* carousel */
@@ -627,13 +821,13 @@ footer ul {
   align-items: center;
 }
 
-.project-name p {
+.project-name p, .project-name i {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .project-name a {
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .nav-btn p {
@@ -649,6 +843,13 @@ footer ul {
   color: #F5EFEB;
 }
 
+.nav-btn-container .nav-link i {
+  color: #ff6b6e;
+}
+
+.nav-btn-container .nav-link:hover i {
+  color:#2BC2A4;
+}
 
 /* languages */
 .map img {
@@ -698,6 +899,21 @@ footer ul {
     width: 100%;
     height: 90%;
   }
+
+  .lanlands-container {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .lanlands-container .wide, .lanlands-container .narrow, .lanlands-container .grid, .lanlands-container .mobile {
+    width: 100%;
+  }
+  .lanlands-container .mobile video {
+    margin: 0 auto;
+    width: 260px;
+  }
+  .bear-container {
+    bottom: -30px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -715,6 +931,15 @@ footer ul {
 
   #footer a {
     font-size: 1.3em;
+  }
+
+  .new-project-visual {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .new-project-visual .video, .new-project-visual .image {
+    width: 100%;
   }
 }
 
