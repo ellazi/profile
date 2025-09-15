@@ -282,6 +282,10 @@ a {
   margin-top: 2em;
 }
 
+.t2-responsive {
+  margin-top: 2em;
+}
+
 .article {
   padding-bottom: 0.8em;
 }
@@ -939,6 +943,10 @@ footer ul {
 
   .new-project-visual .video, .new-project-visual .image {
     width: 100%;
+  }
+
+  .t2-responsive {
+    margin-top: 0.5em;
   }
 }
 
