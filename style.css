@@ -125,11 +125,9 @@ a {
 
 .light-highlight {
   background-color: #F5EFEB;
-  /* font-weight: 500; */
   color: #101010;
   padding: 4px 12px;
   margin-bottom: 0.5rem;
-  /* line-height: 2rem; */
   display: inline-block;
 }
 
@@ -342,7 +340,7 @@ nav {
 }
 
 #mobile-navbar ul {
-  gap: 1em;
+  gap: 0.8em;
 }
 
 #desktop-navbar ul {
@@ -563,6 +561,10 @@ footer ul {
 }
 
 /* lanlands */
+#logo-lanlands {
+  width: 200px;
+}
+
 .lanlands-container {
   width: 100%;
   display: flex;
@@ -947,6 +949,10 @@ footer ul {
 
   .t2-responsive {
     margin-top: 0.5em;
+  }
+
+  #logo-lanlands {
+    width: 160px;
   }
 }
 
