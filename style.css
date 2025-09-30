@@ -131,6 +131,10 @@ a {
   display: inline-block;
 }
 
+.weight-500 {
+  font-weight: 500;
+}
+
 /* Containers and divs */
 .container {
   margin: 0 auto;
@@ -206,7 +210,7 @@ a {
   top:0;
   bottom: 0;
   align-self: stretch;
-  background-color: #F5EFEB;
+  background-color: #f5efeb76;
   width: 1px;
   z-index: 1;
 }
@@ -533,6 +537,7 @@ footer ul {
   scrollbar-width: none;
   margin: 2em 0;
   padding: 0;
+  border-bottom: 1px solid #f5efeb76;
 }
 
 .outher-div::-webkit-scrollbar {
@@ -668,6 +673,7 @@ footer ul {
   flex-direction: column;
   gap: 1em;
   margin-top: 2.5rem;
+  border-bottom: 1px solid #10101095;
 }
 
 .height-360 {
