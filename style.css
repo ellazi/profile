@@ -130,19 +130,25 @@ a {
 }
 .purple-highlight {
   background-color: #465291;
-  color: #fff;
+  color: #F5EFED;
   padding: 0 5px;
   margin-bottom: 0.5rem;
 }
 .blue-highlight {
   background-color: #2292A4;
-  color: #fff;
+  color: #F5EFED;
   padding: 0 5px;
   margin-bottom: 0.5rem;
 }
 .green-highlight {
   background-color: #2bc2a490;
   color: #101010;
+  padding: 0 5px;
+  margin-bottom: 0.5rem;
+}
+.green-highlight-light {
+  background-color: #2bc2a456;
+  color: #F5EFED;
   padding: 0 5px;
   margin-bottom: 0.5rem;
 }
@@ -930,6 +936,9 @@ footer ul {
 
   .outer-div-reviews {
     max-height: fit-content;
+  }
+  .inner-div-reviews {
+    border-radius: 20px;
   }
 
   .outer-div-projects {
