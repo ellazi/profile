@@ -135,7 +135,7 @@ a {
   margin-bottom: 0.5rem;
 }
 .blue-highlight {
-  background-color: #2292A4;
+  background-color: #2293a486;
   color: #F5EFED;
   padding: 0 5px;
   margin-bottom: 0.5rem;
@@ -321,6 +321,9 @@ a {
 }
 .pt-2 {
   padding-top: 2em;
+}
+.w-100 {
+  width: 100%;
 }
 
 /* sections */
@@ -899,11 +902,11 @@ footer ul {
   color: #F5EFED;
 }
 
-.nav-btn-container .nav-link i {
+.project-name .nav-link i {
   color: #ff6b6e;
 }
 
-.nav-btn-container .nav-link:hover i {
+.project-name .nav-link:hover i {
   color:#2BC2A4;
 }
 
