@@ -113,14 +113,15 @@ li { margin-bottom: 0.5rem; }
 
 /* Buttons */
 .btn-yellow {
-  background-color: #dbd66ec1;
+  background-color: #dbd66e;
   color: #1A1924;
   padding: 0.2em 0.8em;
+  transition: background-color 0.2s ease;
 }
 
 .btn-yellow:hover {
-  background-color: #dbd66e;
-  color: #1A1924;
+  background-color: #1A1924;
+  color: #dbd66e;
   padding: 0.2em 0.8em;
 }
 
